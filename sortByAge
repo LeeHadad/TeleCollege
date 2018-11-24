@@ -1,0 +1,31 @@
+
+#include <iostream>
+#include <algorithm>
+struct customer {
+	char name[20];
+	int age;
+
+};
+bool acompare(customer c1,customer c2) { return c1.age < c2.age; }
+int main()
+{
+	customer array [5];
+	strcpy(array[0].name,"maor");
+	array[0].age = 29;
+	strcpy(array[1].name, "Lee");
+	array[1].age = 26;
+	strcpy(array[2].name, "Sivan");
+	array[2].age = 25;
+	strcpy(array[3].name, "Liron");
+	array[3].age = 23;
+	strcpy(array[4].name, "Limor");
+	array[4].age = 24;
+	std::sort(array, array + 5, acompare);
+	for (customer c : array) {
+		std::cout << c.name << std::endl;
+	}
+
+	system("pause");
+    return 0;
+}
+
