@@ -1,31 +1,50 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
 #include <algorithm>
-struct customer {
-	char name[20];
-	int age;
+#include <time.h>
+#include "mainHeader.h"
+bool operator==(Date d1, Date d2) {
+	if (d1.day = d2.day&& d1.month == d2.month && d1.year == d2.year)
+		return true;
+	else
+		return false;
+}
+bool operator>(Date d1, Date d2) {
+	if (d1.year > d2.year)
+		return true;
+	else if (d1.year == d2.year && d1.month > d2.month)
+		return true;
+	else if (d1.year == d2.year && d1.month == d2.month && d1.day > d2.day)
+		return true;
+	else
+		return false;
+}
+bool operator<(Date d1, Date d2) {
+	if (d1 ==d2)
+		return false;
+	else return !(d1>d2);
+}
 
-};
-bool acompare(customer c1,customer c2) { return c1.age < c2.age; }
+bool acompare(Customer c1, Customer c2) { return c1.birthday < c2.birthday; }
 int main()
 {
-	customer array [5];
-	strcpy(array[0].name,"maor");
-	array[0].age = 29;
-	strcpy(array[1].name, "Lee");
-	array[1].age = 26;
-	strcpy(array[2].name, "Sivan");
-	array[2].age = 25;
-	strcpy(array[3].name, "Liron");
-	array[3].age = 23;
-	strcpy(array[4].name, "Limor");
-	array[4].age = 24;
+	Customer array[5];
+	strcpy(array[0].firstname, "maor");
+	array[0].birthday = { 2,10,1989 };
+	strcpy(array[1].firstname, "Lee");
+	array[1].birthday = {2,5,1990 };
+	strcpy(array[2].firstname, "Sivan");
+	array[2].birthday = {5,4,1994 };
+	strcpy(array[3].firstname, "Liron");
+	array[3].birthday = { 21,4,1993 };
+	strcpy(array[4].firstname, "Limor");
+	array[4].birthday = { 3,2,1992 };
 	std::sort(array, array + 5, acompare);
-	for (customer c : array) {
-		std::cout << c.name << std::endl;
+	for (Customer c : array) {
+		std::cout << c.firstname << std::endl;
 	}
 
 	system("pause");
-    return 0;
+	return 0;
 }
-
