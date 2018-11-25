@@ -1,42 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <algorithm>
-struct customer {
-	char name[20];
-	int age;
-	int status;
+#include "mainHeader.h"
 
-};
 int main()
 {
-	customer array [5];
-	strcpy(array[0].name,"maor");
-	array[0].age = 29;
-	array[0].status = 1;
-	strcpy(array[1].name, "Lee");
-	array[1].age = 26;
-	array[1].status = 1;
-	strcpy(array[2].name, "Sivan");
-	array[2].age = 25;
-	array[2].status = 2;
-	strcpy(array[3].name, "Liron");
-	array[3].age = 23;
-	array[3].status = 2;
-	strcpy(array[4].name, "Limor");
-	array[4].age = 24;
-	array[4].status = 3;
-	customer filtered_array[5];
+	Customer array[5];
+	strcpy(array[0].firstname, "Maor");
+	strcpy(array[0].lastname, "Yatskan");
+	array[0].status = new_lead;
+	strcpy(array[1].firstname, "Lee");
+	strcpy(array[1].lastname, "Hadad");
+	array[1].status = new_lead;
+	strcpy(array[2].firstname, "Sivan");
+	strcpy(array[2].lastname, "Tetro");
+	array[2].status = call_later;
+	strcpy(array[3].firstname, "Liron");
+	strcpy(array[3].lastname, "Vaknin");
+	array[3].status = success;
+	strcpy(array[4].firstname, "Limor");
+	strcpy(array[4].lastname, "Shavit");
+	array[4].status = irrelevent;
+	Customer filtered_array[5];
 	int count = 0;
-	for (customer c : array) {
-		if (c.status == 1){
+	for (Customer c : array) {
+		if (c.status == 1) {
 			filtered_array[count] = c;
 			count++;
 		}
 	}
-	for (int i = 0; i < count;i++) {
-		
-		std::cout << filtered_array[i].name << std::endl;
+	for (int i = 0; i < count; i++) {
+
+		std::cout << filtered_array[i].firstname <<" "<< filtered_array[i].lastname<< std::endl;
 	}
 	system("pause");
-    return 0;
+	return 0;
 }
-
