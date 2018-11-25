@@ -36,6 +36,7 @@ struct{
 	Date birthday;
 	Date insertion_date;
 	History* history;
+	int history_count;
 }typedef Customer;
 
 
