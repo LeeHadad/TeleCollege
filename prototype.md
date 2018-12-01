@@ -8,5 +8,5 @@
 -Started working on the actual implementation of showing the contents of the recieved list in the list
  view Control and switching between the leads list and the Opportunities list.
  
--Next commit should already have some integration with the c++ dll code.
+-Next commit will probably be on a sub branch due to it having some integration with the c++ dll code.
 
