@@ -1,3 +1,4 @@
 ﻿  Source.cpp
-     Creating library C:\Users\User\source\repos\Project3\Debug\Project3.lib and object C:\Users\User\source\repos\Project3\Debug\Project3.exp
-  Project3.vcxproj -> C:\Users\User\source\repos\Project3\Debug\Project3.dll
+  LINK : D:\SCE\Year #2\Software Engineering Basics\GIT\Connectivity_Tests\CPP DLL\Debug\Project3.dll not found or not built by the last incremental link; performing full link
+     Creating library D:\SCE\Year #2\Software Engineering Basics\GIT\Connectivity_Tests\CPP DLL\Debug\Project3.lib and object D:\SCE\Year #2\Software Engineering Basics\GIT\Connectivity_Tests\CPP DLL\Debug\Project3.exp
+  Project3.vcxproj -> D:\SCE\Year #2\Software Engineering Basics\GIT\Connectivity_Tests\CPP DLL\Debug\Project3.dll

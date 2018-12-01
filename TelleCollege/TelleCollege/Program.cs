@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace TelleCollege
@@ -19,4 +21,6 @@ namespace TelleCollege
             Application.Run(new OriginForm());//Run the application and show the main form(origin)
         }
     }
+
+
 }

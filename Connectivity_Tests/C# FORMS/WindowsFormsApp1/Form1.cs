@@ -23,10 +23,10 @@ namespace WindowsFormsApp1
             public string b;
         };
 
-        [DllImport("C:\\Users\\User\\source\\repos\\Project3\\Debug\\Project3.dll", CallingConvention = CallingConvention.StdCall)]
+        [DllImport("D:\\SCE\\Year #2\\Software Engineering Basics\\GIT\\Connectivity_Tests\\CPP DLL\\Debug\\Project3.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern IntPtr testRet(out int length);
 
-        [DllImport("C:\\Users\\User\\source\\repos\\Project3\\Debug\\Project3.dll", CallingConvention = CallingConvention.StdCall)]
+        [DllImport("D:\\SCE\\Year #2\\Software Engineering Basics\\GIT\\Connectivity_Tests\\CPP DLL\\Debug\\Project3.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int rem(IntPtr arr);
         public Form1()
         {

@@ -14,5 +14,6 @@ typedef struct a
 	int i;
 	char b[5];
 }a;
+a* customers;
 extern "C" __declspec(dllexport) a* __stdcall testRet(int* length);
 extern "C" __declspec(dllexport) int __stdcall rem(a arr[]);

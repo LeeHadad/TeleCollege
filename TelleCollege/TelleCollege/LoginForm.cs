@@ -12,6 +12,7 @@ namespace TelleCollege
 {
     public partial class LoginForm : Form
     {
+
         public LoginForm()
         {
             InitializeComponent();
@@ -25,6 +26,48 @@ namespace TelleCollege
             {
                 System.Windows.Forms.Application.Exit();
             }
+        }
+
+        private void _bgPanel_Click(object sender, EventArgs e)
+        {
+            this._idTextBox.Enabled = false;
+            this._idTextBox.Enabled = true;
+        }
+
+        private void _loginButton_Click(object sender, EventArgs e)
+        {
+            if (this._idTextBox.Text.Length > 0)
+            {
+                this._errorLabel.Visible = false;
+                this._errorPictureBox.Visible = false;
+                (this.Owner as OriginForm).Id = this._idTextBox.Text;
+                this.Owner.Enabled = true;
+                this.Owner.Visible = true;
+
+                this.Close();
+            }
+            else
+            {
+                this._errorLabel.Visible = true;
+                this._errorPictureBox.Visible = true;
+            }
+        }
+
+        private void _idTextBox_Enter(object sender, EventArgs e)
+        {
+            this._errorLabel.Visible = false;
+            this._errorPictureBox.Visible = false;
+        }
+
+        private void LoginForm_Shown(object sender, EventArgs e)
+        {
+            //this.Size = new System.Drawing.Size((int)(Screen.FromHandle(this.Handle).WorkingArea.Width * (this.Width / 1920.0)), (int)(Screen.FromHandle(this.Handle).WorkingArea.Height * (this.Height / 1080.0)));
+            //this.Location = new System.Drawing.Point(Screen.FromHandle(this.Handle).WorkingArea.Width / 2 - this.Width / 2, Screen.FromHandle(this.Handle).WorkingArea.Height / 2 - this.Height / 2);
+        }
+
+        private void _outlineButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
