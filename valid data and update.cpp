@@ -1,4 +1,4 @@
-/*#include "mainHeader.h"
+#include "mainHeader.h"
 #include<fstream>
 #include<string>
 
@@ -140,4 +140,4 @@ bool* validateANDupdate(Customer toCheck, int action) {
 
 
 	return false;
-}*/
+}
