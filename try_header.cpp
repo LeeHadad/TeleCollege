@@ -7,16 +7,16 @@ using namespace std;
 int main() {
 	Customer c1;
 	c1.status = new_lead;
-	strcpy(c1.email,"mymaor89@gmail.com");
+	strcpy(c1.email,"mymr89@gmail.com");
 	strcpy(c1.lastname, "Yatskan");
 	strcpy(c1.firstname, "Maor");
-	strcpy(c1.id, "301791380");
+	strcpy(c1.id, "30897980");
 	for (bool b : c1.courses) {
 		b = false;
 	}
-	c1.birthday = { 2,10,1989 };
+	c1.birthday = { 2,12,1989 };
 	c1.insertion_date = { 2,12,2018 };
-	strcpy(c1.phone, "0558845014");
+	strcpy(c1.phone, "05587687514");
 
 	History h;
 	h.date = { 2,2,2020 };
