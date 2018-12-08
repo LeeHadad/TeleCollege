@@ -1,6 +1,5 @@
 ------------
 01/12/2018 :
-------------
 
 -Changed the interactivity with the GUI a little bit in a way that makes more sense and looks better
  to the user.
@@ -12,12 +11,14 @@
 
 ------------
 08/12/2018 :
-------------
+
 *******
 **GUI**
 *******
 -Updated the GUI by adding ListViews both for the leads and the opportunities, has some static values right now just to get a general idea.
+
 -Added the abillity to go full screen.
+
 -Created several custom controls for extra efficiency.
 
 ***************
