@@ -22,6 +22,9 @@
 
 -Created several custom controls for extra efficiency.
 *******
+
+
+
 **C++ and txt**
 ***************
 -Took care of handling the transfer between the txt files and the list of clients, might need to chage it a little bit but it works fine for now.
