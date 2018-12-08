@@ -1,5 +1,5 @@
 ------------
-01/12/2018 ::
+01/12/2018 :
 ------------
 
 -Changed the interactivity with the GUI a little bit in a way that makes more sense and looks better
@@ -11,7 +11,7 @@
 -Next commit will probably be on a sub branch due to it having some integration with the c++ dll code.
 
 ------------
-08/12/2018 ::
+08/12/2018 :
 ------------
 *******
 **GUI**
@@ -27,7 +27,7 @@
  
 ~~~~~~~~~~
 ~~goals~~
-~~~~~~~~~~
+
 
 -Add the remaining GUI forms which are- 
 	*full lead/opportunity info view form
@@ -43,4 +43,5 @@
 -Handle remaining bugs
 
 -Celebrate
+~~~~~~~~~~
 
