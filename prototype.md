@@ -13,7 +13,7 @@
 08/12/2018 :
 ------------
 
-*******
+
 **GUI**
 *******
 -Updated the GUI by adding ListViews both for the leads and the opportunities, has some static values right now just to get a general idea.
@@ -21,12 +21,12 @@
 -Added the abillity to go full screen.
 
 -Created several custom controls for extra efficiency.
-
-***************
+*******
 **C++ and txt**
 ***************
 -Took care of handling the transfer between the txt files and the list of clients, might need to chage it a little bit but it works fine for now.
  
+***************
 ~~~~~~~~~~
 ~~goals~~
 
