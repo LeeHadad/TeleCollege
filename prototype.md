@@ -1,5 +1,6 @@
 ------------
 01/12/2018 :
+------------
 
 -Changed the interactivity with the GUI a little bit in a way that makes more sense and looks better
  to the user.
@@ -11,6 +12,7 @@
 
 ------------
 08/12/2018 :
+------------
 
 *******
 **GUI**
