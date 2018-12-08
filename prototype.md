@@ -1,4 +1,3 @@
-------------
 01/12/2018 :
 ------------
 
@@ -10,7 +9,7 @@
  
 -Next commit will probably be on a sub branch due to it having some integration with the c++ dll code.
 
-------------
+
 08/12/2018 :
 ------------
 
