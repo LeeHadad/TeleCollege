@@ -30,18 +30,170 @@ namespace TelleCollege
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "1",
+            "Oneg Lugassy",
+            "207912635",
+            "28/04/1999",
+            "054-2490249",
+            "oneg.lugassy@gmail.com",
+            "01/12/2018"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "2",
+            "Ofek Lugassy",
+            "209712365",
+            "26/01/1999",
+            "052-4771955",
+            "ofeklug@gmail.com",
+            "02/12/2018"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("3");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("4");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("5");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("6");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("7");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("8");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("9");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("10");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("11");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("12");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("13");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("14");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("15");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("16");
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("17");
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("18");
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("19");
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("20");
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("21");
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("22");
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("23");
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("24");
+            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("25");
+            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("26");
+            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("27");
+            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("28");
+            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("29");
+            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("30");
+            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("31");
+            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("32");
+            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("33");
+            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem39 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem40 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem41 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem42 = new System.Windows.Forms.ListViewItem(new string[] {
+            "1",
+            "Oneg Lugassy",
+            "207912635",
+            "28/04/1999",
+            "054-2490249",
+            "oneg.lugassy@gmail.com",
+            "on hold",
+            "01/12/2018"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem(new string[] {
+            "2",
+            "Ofek Lugassy",
+            "209712365",
+            "26/01/1999",
+            "052-4771955",
+            "ofeklug@gmail.com",
+            "sold",
+            "02/12/2018"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("3");
+            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("4");
+            System.Windows.Forms.ListViewItem listViewItem46 = new System.Windows.Forms.ListViewItem("5");
+            System.Windows.Forms.ListViewItem listViewItem47 = new System.Windows.Forms.ListViewItem("6");
+            System.Windows.Forms.ListViewItem listViewItem48 = new System.Windows.Forms.ListViewItem("7");
+            System.Windows.Forms.ListViewItem listViewItem49 = new System.Windows.Forms.ListViewItem("8");
+            System.Windows.Forms.ListViewItem listViewItem50 = new System.Windows.Forms.ListViewItem("9");
+            System.Windows.Forms.ListViewItem listViewItem51 = new System.Windows.Forms.ListViewItem("10");
+            System.Windows.Forms.ListViewItem listViewItem52 = new System.Windows.Forms.ListViewItem("11");
+            System.Windows.Forms.ListViewItem listViewItem53 = new System.Windows.Forms.ListViewItem("12");
+            System.Windows.Forms.ListViewItem listViewItem54 = new System.Windows.Forms.ListViewItem("13");
+            System.Windows.Forms.ListViewItem listViewItem55 = new System.Windows.Forms.ListViewItem("14");
+            System.Windows.Forms.ListViewItem listViewItem56 = new System.Windows.Forms.ListViewItem("15");
+            System.Windows.Forms.ListViewItem listViewItem57 = new System.Windows.Forms.ListViewItem("16");
+            System.Windows.Forms.ListViewItem listViewItem58 = new System.Windows.Forms.ListViewItem("17");
+            System.Windows.Forms.ListViewItem listViewItem59 = new System.Windows.Forms.ListViewItem("18");
+            System.Windows.Forms.ListViewItem listViewItem60 = new System.Windows.Forms.ListViewItem("19");
+            System.Windows.Forms.ListViewItem listViewItem61 = new System.Windows.Forms.ListViewItem("20");
+            System.Windows.Forms.ListViewItem listViewItem62 = new System.Windows.Forms.ListViewItem("21");
+            System.Windows.Forms.ListViewItem listViewItem63 = new System.Windows.Forms.ListViewItem("22");
+            System.Windows.Forms.ListViewItem listViewItem64 = new System.Windows.Forms.ListViewItem("23");
+            System.Windows.Forms.ListViewItem listViewItem65 = new System.Windows.Forms.ListViewItem("24");
+            System.Windows.Forms.ListViewItem listViewItem66 = new System.Windows.Forms.ListViewItem("25");
+            System.Windows.Forms.ListViewItem listViewItem67 = new System.Windows.Forms.ListViewItem("26");
+            System.Windows.Forms.ListViewItem listViewItem68 = new System.Windows.Forms.ListViewItem("27");
+            System.Windows.Forms.ListViewItem listViewItem69 = new System.Windows.Forms.ListViewItem("28");
+            System.Windows.Forms.ListViewItem listViewItem70 = new System.Windows.Forms.ListViewItem("29");
+            System.Windows.Forms.ListViewItem listViewItem71 = new System.Windows.Forms.ListViewItem("30");
+            System.Windows.Forms.ListViewItem listViewItem72 = new System.Windows.Forms.ListViewItem("31");
+            System.Windows.Forms.ListViewItem listViewItem73 = new System.Windows.Forms.ListViewItem("32");
+            System.Windows.Forms.ListViewItem listViewItem74 = new System.Windows.Forms.ListViewItem("33");
+            System.Windows.Forms.ListViewItem listViewItem75 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem76 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem77 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem78 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem79 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem80 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem81 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem82 = new System.Windows.Forms.ListViewItem("");
             this._welcomeLabel = new System.Windows.Forms.Label();
             this._LeadsButton = new System.Windows.Forms.Button();
             this._OpportunityButton = new System.Windows.Forms.Button();
             this._outline1 = new System.Windows.Forms.Button();
             this._focusVessel = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this._tabLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.maximizeButton1 = new CustomControls_TelleCollege.MaximizeButton();
             this._closeButton = new CustomControls_TelleCollege.CloseButton();
             this.minimizeButton1 = new CustomControls_TelleCollege.MinimizeButton();
             this.topBar2 = new CustomControls_TelleCollege.TopBar();
             this._outlineButton2 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
+            this._leadsColumnLayout = new System.Windows.Forms.TableLayoutPanel();
+            this._sortLeadIndex = new System.Windows.Forms.Button();
+            this._sortLeadsName = new System.Windows.Forms.Button();
+            this._sortLeadsId = new System.Windows.Forms.Button();
+            this._sortLeadsBirth = new System.Windows.Forms.Button();
+            this._sortLeadsPhone = new System.Windows.Forms.Button();
+            this._sortleadsEmail = new System.Windows.Forms.Button();
+            this._sortLeadsInsert = new System.Windows.Forms.Button();
+            this._leadsListView = new System.Windows.Forms.ListView();
+            this._index = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._personalId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._birthDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._phoneNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._emailAddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._insertionDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._leadsPanel = new System.Windows.Forms.Panel();
+            this._opportunitiesPanel = new System.Windows.Forms.Panel();
+            this._opportunitiesListView = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._opportunitiesColumnLayout = new System.Windows.Forms.TableLayoutPanel();
+            this._sortOpportunityStatus = new System.Windows.Forms.Button();
+            this._sortOpportunityIndex = new System.Windows.Forms.Button();
+            this._sortOpportunityName = new System.Windows.Forms.Button();
+            this._sortOpportunityId = new System.Windows.Forms.Button();
+            this._sortOpportunityBirth = new System.Windows.Forms.Button();
+            this._sortOpportunityPhone = new System.Windows.Forms.Button();
+            this._sortOpportunityEmail = new System.Windows.Forms.Button();
+            this._sortOpportunityInsert = new System.Windows.Forms.Button();
+            this._tabLayoutPanel.SuspendLayout();
+            this._leadsColumnLayout.SuspendLayout();
+            this._leadsPanel.SuspendLayout();
+            this._opportunitiesPanel.SuspendLayout();
+            this._opportunitiesColumnLayout.SuspendLayout();
             this.SuspendLayout();
             // 
             // _welcomeLabel
@@ -52,7 +204,7 @@ namespace TelleCollege
             this._welcomeLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this._welcomeLabel.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._welcomeLabel.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this._welcomeLabel.Location = new System.Drawing.Point(597, 17);
+            this._welcomeLabel.Location = new System.Drawing.Point(597, 14);
             this._welcomeLabel.Name = "_welcomeLabel";
             this._welcomeLabel.Size = new System.Drawing.Size(179, 30);
             this._welcomeLabel.TabIndex = 0;
@@ -129,23 +281,23 @@ namespace TelleCollege
             this._focusVessel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this._focusVessel.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel1
+            // _tabLayoutPanel
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._tabLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this._LeadsButton, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this._OpportunityButton, 1, 0);
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(14, 57);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1340, 39);
-            this.tableLayoutPanel1.TabIndex = 17;
+            this._tabLayoutPanel.ColumnCount = 2;
+            this._tabLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._tabLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._tabLayoutPanel.Controls.Add(this._LeadsButton, 0, 0);
+            this._tabLayoutPanel.Controls.Add(this._OpportunityButton, 1, 0);
+            this._tabLayoutPanel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._tabLayoutPanel.Location = new System.Drawing.Point(14, 57);
+            this._tabLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+            this._tabLayoutPanel.Name = "_tabLayoutPanel";
+            this._tabLayoutPanel.RowCount = 1;
+            this._tabLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._tabLayoutPanel.Size = new System.Drawing.Size(1340, 39);
+            this._tabLayoutPanel.TabIndex = 17;
             // 
             // maximizeButton1
             // 
@@ -161,6 +313,7 @@ namespace TelleCollege
             this.maximizeButton1.Size = new System.Drawing.Size(21, 23);
             this.maximizeButton1.TabIndex = 21;
             this.maximizeButton1.UseVisualStyleBackColor = false;
+            this.maximizeButton1.Click += new System.EventHandler(this.maximizeButton1_Click);
             // 
             // _closeButton
             // 
@@ -189,6 +342,7 @@ namespace TelleCollege
             this.minimizeButton1.Size = new System.Drawing.Size(21, 23);
             this.minimizeButton1.TabIndex = 18;
             this.minimizeButton1.UseVisualStyleBackColor = false;
+            this.minimizeButton1.Click += new System.EventHandler(this.minimizeButton1_Click);
             // 
             // topBar2
             // 
@@ -215,18 +369,620 @@ namespace TelleCollege
             this._outlineButton2.TabIndex = 22;
             this._outlineButton2.UseVisualStyleBackColor = true;
             // 
+            // _leadsColumnLayout
+            // 
+            this._leadsColumnLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._leadsColumnLayout.ColumnCount = 7;
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.52632F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.47369F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 437F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this._leadsColumnLayout.Controls.Add(this._sortLeadIndex, 0, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsName, 1, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsId, 2, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsBirth, 3, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsPhone, 4, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortleadsEmail, 5, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsInsert, 6, 0);
+            this._leadsColumnLayout.Location = new System.Drawing.Point(5, 96);
+            this._leadsColumnLayout.Margin = new System.Windows.Forms.Padding(0);
+            this._leadsColumnLayout.Name = "_leadsColumnLayout";
+            this._leadsColumnLayout.RowCount = 1;
+            this._leadsColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._leadsColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._leadsColumnLayout.Size = new System.Drawing.Size(1359, 32);
+            this._leadsColumnLayout.TabIndex = 25;
+            // 
+            // _sortLeadIndex
+            // 
+            this._sortLeadIndex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortLeadIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadIndex.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadIndex.Location = new System.Drawing.Point(0, 0);
+            this._sortLeadIndex.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadIndex.Name = "_sortLeadIndex";
+            this._sortLeadIndex.Size = new System.Drawing.Size(77, 32);
+            this._sortLeadIndex.TabIndex = 0;
+            this._sortLeadIndex.Text = "  #   v";
+            this._sortLeadIndex.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this._sortLeadIndex.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsName
+            // 
+            this._sortLeadsName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortLeadsName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsName.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsName.Location = new System.Drawing.Point(77, 0);
+            this._sortLeadsName.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsName.Name = "_sortLeadsName";
+            this._sortLeadsName.Size = new System.Drawing.Size(301, 32);
+            this._sortLeadsName.TabIndex = 1;
+            this._sortLeadsName.Text = "Full Name";
+            this._sortLeadsName.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsId
+            // 
+            this._sortLeadsId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortLeadsId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsId.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsId.Location = new System.Drawing.Point(378, 0);
+            this._sortLeadsId.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsId.Name = "_sortLeadsId";
+            this._sortLeadsId.Size = new System.Drawing.Size(124, 32);
+            this._sortLeadsId.TabIndex = 2;
+            this._sortLeadsId.Text = "Id";
+            this._sortLeadsId.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsBirth
+            // 
+            this._sortLeadsBirth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortLeadsBirth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsBirth.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsBirth.Location = new System.Drawing.Point(502, 0);
+            this._sortLeadsBirth.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsBirth.Name = "_sortLeadsBirth";
+            this._sortLeadsBirth.Size = new System.Drawing.Size(123, 32);
+            this._sortLeadsBirth.TabIndex = 3;
+            this._sortLeadsBirth.Text = "Birth Date";
+            this._sortLeadsBirth.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsPhone
+            // 
+            this._sortLeadsPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortLeadsPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsPhone.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsPhone.Location = new System.Drawing.Point(625, 0);
+            this._sortLeadsPhone.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsPhone.Name = "_sortLeadsPhone";
+            this._sortLeadsPhone.Size = new System.Drawing.Size(171, 32);
+            this._sortLeadsPhone.TabIndex = 4;
+            this._sortLeadsPhone.Text = "Phone Number";
+            this._sortLeadsPhone.UseVisualStyleBackColor = true;
+            // 
+            // _sortleadsEmail
+            // 
+            this._sortleadsEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortleadsEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortleadsEmail.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortleadsEmail.Location = new System.Drawing.Point(796, 0);
+            this._sortleadsEmail.Margin = new System.Windows.Forms.Padding(0);
+            this._sortleadsEmail.Name = "_sortleadsEmail";
+            this._sortleadsEmail.Size = new System.Drawing.Size(437, 32);
+            this._sortleadsEmail.TabIndex = 5;
+            this._sortleadsEmail.Text = "Email Address";
+            this._sortleadsEmail.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsInsert
+            // 
+            this._sortLeadsInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortLeadsInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsInsert.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsInsert.Location = new System.Drawing.Point(1233, 0);
+            this._sortLeadsInsert.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsInsert.Name = "_sortLeadsInsert";
+            this._sortLeadsInsert.Size = new System.Drawing.Size(126, 32);
+            this._sortLeadsInsert.TabIndex = 6;
+            this._sortLeadsInsert.Text = "Insertion Date";
+            this._sortLeadsInsert.UseVisualStyleBackColor = true;
+            // 
+            // _leadsListView
+            // 
+            this._leadsListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._leadsListView.AutoArrange = false;
+            this._leadsListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this._leadsListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this._leadsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._index,
+            this._name,
+            this._personalId,
+            this._birthDate,
+            this._phoneNumber,
+            this._emailAddress,
+            this._insertionDate});
+            this._leadsListView.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._leadsListView.ForeColor = System.Drawing.Color.AliceBlue;
+            this._leadsListView.FullRowSelect = true;
+            this._leadsListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            listViewItem1.StateImageIndex = 0;
+            listViewItem2.StateImageIndex = 0;
+            listViewItem3.StateImageIndex = 0;
+            listViewItem4.StateImageIndex = 0;
+            listViewItem5.StateImageIndex = 0;
+            listViewItem6.StateImageIndex = 0;
+            listViewItem7.StateImageIndex = 0;
+            listViewItem8.StateImageIndex = 0;
+            listViewItem9.StateImageIndex = 0;
+            listViewItem10.StateImageIndex = 0;
+            listViewItem11.StateImageIndex = 0;
+            listViewItem12.StateImageIndex = 0;
+            listViewItem13.StateImageIndex = 0;
+            listViewItem14.StateImageIndex = 0;
+            listViewItem15.StateImageIndex = 0;
+            listViewItem16.StateImageIndex = 0;
+            listViewItem17.StateImageIndex = 0;
+            listViewItem18.StateImageIndex = 0;
+            listViewItem19.StateImageIndex = 0;
+            listViewItem20.StateImageIndex = 0;
+            listViewItem21.StateImageIndex = 0;
+            listViewItem22.StateImageIndex = 0;
+            listViewItem23.StateImageIndex = 0;
+            listViewItem24.StateImageIndex = 0;
+            listViewItem25.StateImageIndex = 0;
+            listViewItem26.StateImageIndex = 0;
+            listViewItem27.StateImageIndex = 0;
+            listViewItem28.StateImageIndex = 0;
+            listViewItem29.StateImageIndex = 0;
+            listViewItem30.StateImageIndex = 0;
+            listViewItem31.StateImageIndex = 0;
+            listViewItem32.StateImageIndex = 0;
+            listViewItem33.StateImageIndex = 0;
+            this._leadsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
+            listViewItem6,
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16,
+            listViewItem17,
+            listViewItem18,
+            listViewItem19,
+            listViewItem20,
+            listViewItem21,
+            listViewItem22,
+            listViewItem23,
+            listViewItem24,
+            listViewItem25,
+            listViewItem26,
+            listViewItem27,
+            listViewItem28,
+            listViewItem29,
+            listViewItem30,
+            listViewItem31,
+            listViewItem32,
+            listViewItem33,
+            listViewItem34,
+            listViewItem35,
+            listViewItem36,
+            listViewItem37,
+            listViewItem38,
+            listViewItem39,
+            listViewItem40,
+            listViewItem41});
+            this._leadsListView.LabelWrap = false;
+            this._leadsListView.Location = new System.Drawing.Point(-1, 0);
+            this._leadsListView.MultiSelect = false;
+            this._leadsListView.Name = "_leadsListView";
+            this._leadsListView.ShowGroups = false;
+            this._leadsListView.Size = new System.Drawing.Size(1397, 646);
+            this._leadsListView.TabIndex = 26;
+            this._leadsListView.TabStop = false;
+            this._leadsListView.TileSize = new System.Drawing.Size(100, 50);
+            this._leadsListView.UseCompatibleStateImageBehavior = false;
+            this._leadsListView.View = System.Windows.Forms.View.Details;
+            // 
+            // _index
+            // 
+            this._index.Text = "#";
+            this._index.Width = 78;
+            // 
+            // _name
+            // 
+            this._name.Text = "Name";
+            this._name.Width = 303;
+            // 
+            // _personalId
+            // 
+            this._personalId.Text = "Id";
+            this._personalId.Width = 122;
+            // 
+            // _birthDate
+            // 
+            this._birthDate.Text = "Birth Date";
+            this._birthDate.Width = 123;
+            // 
+            // _phoneNumber
+            // 
+            this._phoneNumber.Text = "Phone Number";
+            this._phoneNumber.Width = 172;
+            // 
+            // _emailAddress
+            // 
+            this._emailAddress.Text = "Email";
+            this._emailAddress.Width = 437;
+            // 
+            // _insertionDate
+            // 
+            this._insertionDate.Text = "Date Added";
+            this._insertionDate.Width = 401;
+            // 
+            // _leadsPanel
+            // 
+            this._leadsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._leadsPanel.Controls.Add(this._leadsListView);
+            this._leadsPanel.Location = new System.Drawing.Point(5, 131);
+            this._leadsPanel.Name = "_leadsPanel";
+            this._leadsPanel.Size = new System.Drawing.Size(1359, 625);
+            this._leadsPanel.TabIndex = 27;
+            // 
+            // _opportunitiesPanel
+            // 
+            this._opportunitiesPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._opportunitiesPanel.Controls.Add(this._opportunitiesListView);
+            this._opportunitiesPanel.Location = new System.Drawing.Point(5, 131);
+            this._opportunitiesPanel.Name = "_opportunitiesPanel";
+            this._opportunitiesPanel.Size = new System.Drawing.Size(1359, 625);
+            this._opportunitiesPanel.TabIndex = 28;
+            this._opportunitiesPanel.Visible = false;
+            // 
+            // _opportunitiesListView
+            // 
+            this._opportunitiesListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._opportunitiesListView.AutoArrange = false;
+            this._opportunitiesListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this._opportunitiesListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this._opportunitiesListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader8,
+            this.columnHeader7});
+            this._opportunitiesListView.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._opportunitiesListView.ForeColor = System.Drawing.Color.AliceBlue;
+            this._opportunitiesListView.FullRowSelect = true;
+            this._opportunitiesListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            listViewItem42.StateImageIndex = 0;
+            listViewItem43.StateImageIndex = 0;
+            listViewItem44.StateImageIndex = 0;
+            listViewItem45.StateImageIndex = 0;
+            listViewItem46.StateImageIndex = 0;
+            listViewItem47.StateImageIndex = 0;
+            listViewItem48.StateImageIndex = 0;
+            listViewItem49.StateImageIndex = 0;
+            listViewItem50.StateImageIndex = 0;
+            listViewItem51.StateImageIndex = 0;
+            listViewItem52.StateImageIndex = 0;
+            listViewItem53.StateImageIndex = 0;
+            listViewItem54.StateImageIndex = 0;
+            listViewItem55.StateImageIndex = 0;
+            listViewItem56.StateImageIndex = 0;
+            listViewItem57.StateImageIndex = 0;
+            listViewItem58.StateImageIndex = 0;
+            listViewItem59.StateImageIndex = 0;
+            listViewItem60.StateImageIndex = 0;
+            listViewItem61.StateImageIndex = 0;
+            listViewItem62.StateImageIndex = 0;
+            listViewItem63.StateImageIndex = 0;
+            listViewItem64.StateImageIndex = 0;
+            listViewItem65.StateImageIndex = 0;
+            listViewItem66.StateImageIndex = 0;
+            listViewItem67.StateImageIndex = 0;
+            listViewItem68.StateImageIndex = 0;
+            listViewItem69.StateImageIndex = 0;
+            listViewItem70.StateImageIndex = 0;
+            listViewItem71.StateImageIndex = 0;
+            listViewItem72.StateImageIndex = 0;
+            listViewItem73.StateImageIndex = 0;
+            listViewItem74.StateImageIndex = 0;
+            this._opportunitiesListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem42,
+            listViewItem43,
+            listViewItem44,
+            listViewItem45,
+            listViewItem46,
+            listViewItem47,
+            listViewItem48,
+            listViewItem49,
+            listViewItem50,
+            listViewItem51,
+            listViewItem52,
+            listViewItem53,
+            listViewItem54,
+            listViewItem55,
+            listViewItem56,
+            listViewItem57,
+            listViewItem58,
+            listViewItem59,
+            listViewItem60,
+            listViewItem61,
+            listViewItem62,
+            listViewItem63,
+            listViewItem64,
+            listViewItem65,
+            listViewItem66,
+            listViewItem67,
+            listViewItem68,
+            listViewItem69,
+            listViewItem70,
+            listViewItem71,
+            listViewItem72,
+            listViewItem73,
+            listViewItem74,
+            listViewItem75,
+            listViewItem76,
+            listViewItem77,
+            listViewItem78,
+            listViewItem79,
+            listViewItem80,
+            listViewItem81,
+            listViewItem82});
+            this._opportunitiesListView.LabelWrap = false;
+            this._opportunitiesListView.Location = new System.Drawing.Point(-1, 0);
+            this._opportunitiesListView.MultiSelect = false;
+            this._opportunitiesListView.Name = "_opportunitiesListView";
+            this._opportunitiesListView.ShowGroups = false;
+            this._opportunitiesListView.Size = new System.Drawing.Size(1397, 646);
+            this._opportunitiesListView.TabIndex = 26;
+            this._opportunitiesListView.TabStop = false;
+            this._opportunitiesListView.TileSize = new System.Drawing.Size(100, 50);
+            this._opportunitiesListView.UseCompatibleStateImageBehavior = false;
+            this._opportunitiesListView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "#";
+            this.columnHeader1.Width = 73;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 267;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Id";
+            this.columnHeader3.Width = 122;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Birth Date";
+            this.columnHeader4.Width = 128;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Phone Number";
+            this.columnHeader5.Width = 170;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Email";
+            this.columnHeader6.Width = 350;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Status";
+            this.columnHeader8.Width = 133;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Date Added";
+            this.columnHeader7.Width = 401;
+            // 
+            // _opportunitiesColumnLayout
+            // 
+            this._opportunitiesColumnLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._opportunitiesColumnLayout.ColumnCount = 8;
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.52632F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.47369F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityStatus, 6, 0);
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityIndex, 0, 0);
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityName, 1, 0);
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityId, 2, 0);
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityBirth, 3, 0);
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityPhone, 4, 0);
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityEmail, 5, 0);
+            this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityInsert, 7, 0);
+            this._opportunitiesColumnLayout.Location = new System.Drawing.Point(5, 96);
+            this._opportunitiesColumnLayout.Margin = new System.Windows.Forms.Padding(0);
+            this._opportunitiesColumnLayout.Name = "_opportunitiesColumnLayout";
+            this._opportunitiesColumnLayout.RowCount = 1;
+            this._opportunitiesColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._opportunitiesColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._opportunitiesColumnLayout.Size = new System.Drawing.Size(1359, 32);
+            this._opportunitiesColumnLayout.TabIndex = 29;
+            // 
+            // _sortOpportunityStatus
+            // 
+            this._sortOpportunityStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityStatus.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityStatus.Location = new System.Drawing.Point(1109, 0);
+            this._sortOpportunityStatus.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityStatus.Name = "_sortOpportunityStatus";
+            this._sortOpportunityStatus.Size = new System.Drawing.Size(132, 32);
+            this._sortOpportunityStatus.TabIndex = 27;
+            this._sortOpportunityStatus.Text = "Status";
+            this._sortOpportunityStatus.UseVisualStyleBackColor = true;
+            // 
+            // _sortOpportunityIndex
+            // 
+            this._sortOpportunityIndex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityIndex.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityIndex.Location = new System.Drawing.Point(0, 0);
+            this._sortOpportunityIndex.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityIndex.Name = "_sortOpportunityIndex";
+            this._sortOpportunityIndex.Size = new System.Drawing.Size(69, 32);
+            this._sortOpportunityIndex.TabIndex = 0;
+            this._sortOpportunityIndex.Text = "  #   v";
+            this._sortOpportunityIndex.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this._sortOpportunityIndex.UseVisualStyleBackColor = true;
+            // 
+            // _sortOpportunityName
+            // 
+            this._sortOpportunityName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityName.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityName.Location = new System.Drawing.Point(69, 0);
+            this._sortOpportunityName.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityName.Name = "_sortOpportunityName";
+            this._sortOpportunityName.Size = new System.Drawing.Size(269, 32);
+            this._sortOpportunityName.TabIndex = 1;
+            this._sortOpportunityName.Text = "Full Name";
+            this._sortOpportunityName.UseVisualStyleBackColor = true;
+            // 
+            // _sortOpportunityId
+            // 
+            this._sortOpportunityId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityId.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityId.Location = new System.Drawing.Point(338, 0);
+            this._sortOpportunityId.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityId.Name = "_sortOpportunityId";
+            this._sortOpportunityId.Size = new System.Drawing.Size(123, 32);
+            this._sortOpportunityId.TabIndex = 2;
+            this._sortOpportunityId.Text = "Id";
+            this._sortOpportunityId.UseVisualStyleBackColor = true;
+            // 
+            // _sortOpportunityBirth
+            // 
+            this._sortOpportunityBirth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityBirth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityBirth.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityBirth.Location = new System.Drawing.Point(461, 0);
+            this._sortOpportunityBirth.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityBirth.Name = "_sortOpportunityBirth";
+            this._sortOpportunityBirth.Size = new System.Drawing.Size(128, 32);
+            this._sortOpportunityBirth.TabIndex = 3;
+            this._sortOpportunityBirth.Text = "Birth Date";
+            this._sortOpportunityBirth.UseVisualStyleBackColor = true;
+            // 
+            // _sortOpportunityPhone
+            // 
+            this._sortOpportunityPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityPhone.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityPhone.Location = new System.Drawing.Point(589, 0);
+            this._sortOpportunityPhone.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityPhone.Name = "_sortOpportunityPhone";
+            this._sortOpportunityPhone.Size = new System.Drawing.Size(170, 32);
+            this._sortOpportunityPhone.TabIndex = 4;
+            this._sortOpportunityPhone.Text = "Phone Number";
+            this._sortOpportunityPhone.UseVisualStyleBackColor = true;
+            // 
+            // _sortOpportunityEmail
+            // 
+            this._sortOpportunityEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityEmail.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityEmail.Location = new System.Drawing.Point(759, 0);
+            this._sortOpportunityEmail.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityEmail.Name = "_sortOpportunityEmail";
+            this._sortOpportunityEmail.Size = new System.Drawing.Size(350, 32);
+            this._sortOpportunityEmail.TabIndex = 5;
+            this._sortOpportunityEmail.Text = "Email Address";
+            this._sortOpportunityEmail.UseVisualStyleBackColor = true;
+            // 
+            // _sortOpportunityInsert
+            // 
+            this._sortOpportunityInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortOpportunityInsert.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortOpportunityInsert.Location = new System.Drawing.Point(1241, 0);
+            this._sortOpportunityInsert.Margin = new System.Windows.Forms.Padding(0);
+            this._sortOpportunityInsert.Name = "_sortOpportunityInsert";
+            this._sortOpportunityInsert.Size = new System.Drawing.Size(118, 32);
+            this._sortOpportunityInsert.TabIndex = 6;
+            this._sortOpportunityInsert.Text = "Insertion Date";
+            this._sortOpportunityInsert.UseVisualStyleBackColor = true;
+            // 
             // OriginForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this._opportunitiesColumnLayout);
+            this.Controls.Add(this._opportunitiesPanel);
+            this.Controls.Add(this._welcomeLabel);
+            this.Controls.Add(this._leadsPanel);
+            this.Controls.Add(this._leadsColumnLayout);
             this.Controls.Add(this._outlineButton2);
             this.Controls.Add(this.maximizeButton1);
             this.Controls.Add(this._closeButton);
             this.Controls.Add(this.minimizeButton1);
             this.Controls.Add(this.topBar2);
-            this.Controls.Add(this._welcomeLabel);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this._tabLayoutPanel);
             this.Controls.Add(this._outline1);
             this.Controls.Add(this._focusVessel);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -239,7 +995,11 @@ namespace TelleCollege
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelleCollege";
             this.Shown += new System.EventHandler(this.OriginForm_Shown);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this._tabLayoutPanel.ResumeLayout(false);
+            this._leadsColumnLayout.ResumeLayout(false);
+            this._leadsPanel.ResumeLayout(false);
+            this._opportunitiesPanel.ResumeLayout(false);
+            this._opportunitiesColumnLayout.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,12 +1012,48 @@ namespace TelleCollege
         private System.Windows.Forms.Button _OpportunityButton;
         private System.Windows.Forms.Button _outline1;
         private System.Windows.Forms.Button _focusVessel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel _tabLayoutPanel;
         private CustomControls_TelleCollege.CloseButton _closeButton;
         private CustomControls_TelleCollege.MinimizeButton minimizeButton1;
         private CustomControls_TelleCollege.TopBar topBar2;
         private CustomControls_TelleCollege.MaximizeButton maximizeButton1;
         private Button _outlineButton2;
+        private TableLayoutPanel _leadsColumnLayout;
+        private Button _sortLeadIndex;
+        private Button _sortLeadsName;
+        private Button _sortLeadsId;
+        private Button _sortLeadsBirth;
+        private Button _sortLeadsPhone;
+        private Button _sortleadsEmail;
+        private Button _sortLeadsInsert;
+        private ListView _leadsListView;
+        private ColumnHeader _index;
+        private ColumnHeader _name;
+        private ColumnHeader _personalId;
+        private ColumnHeader _birthDate;
+        private ColumnHeader _phoneNumber;
+        private ColumnHeader _emailAddress;
+        private ColumnHeader _insertionDate;
+        private Panel _leadsPanel;
+        private Panel _opportunitiesPanel;
+        private ListView _opportunitiesListView;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private ColumnHeader columnHeader7;
+        private TableLayoutPanel _opportunitiesColumnLayout;
+        private Button _sortOpportunityIndex;
+        private Button _sortOpportunityName;
+        private Button _sortOpportunityId;
+        private Button _sortOpportunityBirth;
+        private Button _sortOpportunityPhone;
+        private Button _sortOpportunityEmail;
+        private Button _sortOpportunityInsert;
+        private ColumnHeader columnHeader8;
+        private Button _sortOpportunityStatus;
     }
 }
 

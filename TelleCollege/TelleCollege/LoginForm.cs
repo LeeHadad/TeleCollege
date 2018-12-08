@@ -16,6 +16,7 @@ namespace TelleCollege
         public LoginForm()
         {
             InitializeComponent();
+            this.ActiveControl = _idTextBox;
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -65,9 +66,11 @@ namespace TelleCollege
             //this.Location = new System.Drawing.Point(Screen.FromHandle(this.Handle).WorkingArea.Width / 2 - this.Width / 2, Screen.FromHandle(this.Handle).WorkingArea.Height / 2 - this.Height / 2);
         }
 
-        private void _outlineButton_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-
+            this._idTextBox.Enabled = false;
+            this._idTextBox.Enabled = true;
+            this._focusVessel.Focus();
         }
     }
 }

@@ -37,6 +37,8 @@
             this._closeButton = new CustomControls_TelleCollege.CloseButton();
             this._errorPictureBox = new System.Windows.Forms.PictureBox();
             this._outlineButton = new System.Windows.Forms.Button();
+            this.topBar1 = new CustomControls_TelleCollege.TopBar();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._errorPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,6 +146,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this._outlineButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this._outlineButton.Enabled = false;
+            this._outlineButton.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this._outlineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this._outlineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this._outlineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._outlineButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this._outlineButton.Location = new System.Drawing.Point(0, 0);
@@ -151,7 +156,24 @@
             this._outlineButton.Size = new System.Drawing.Size(517, 177);
             this._outlineButton.TabIndex = 14;
             this._outlineButton.UseVisualStyleBackColor = false;
-            this._outlineButton.Click += new System.EventHandler(this._outlineButton_Click);
+            // 
+            // topBar1
+            // 
+            this.topBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.topBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.topBar1.Location = new System.Drawing.Point(7, 4);
+            this.topBar1.Name = "topBar1";
+            this.topBar1.Size = new System.Drawing.Size(484, 16);
+            this.topBar1.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(517, 175);
+            this.label1.TabIndex = 16;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // LoginForm
             // 
@@ -160,6 +182,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(517, 181);
+            this.Controls.Add(this.topBar1);
             this.Controls.Add(this._idLabel);
             this.Controls.Add(this._errorLabel);
             this.Controls.Add(this._loginButton);
@@ -168,6 +191,7 @@
             this.Controls.Add(this._idTextBox);
             this.Controls.Add(this._outlineButton);
             this.Controls.Add(this._focusVessel);
+            this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.SkyBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -195,5 +219,7 @@
         private CustomControls_TelleCollege.CloseButton _closeButton;
         private System.Windows.Forms.PictureBox _errorPictureBox;
         private System.Windows.Forms.Button _outlineButton;
+        private CustomControls_TelleCollege.TopBar topBar1;
+        private System.Windows.Forms.Label label1;
     }
 }
