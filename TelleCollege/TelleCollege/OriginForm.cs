@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+
 
 namespace TelleCollege
 {
@@ -22,7 +24,6 @@ namespace TelleCollege
         {
             loadingScreenForm loadingScreen = new loadingScreenForm();
             loadingScreen.ShowDialog();
-
             InitializeComponent();
             _unclicked_back = _OpportunityButton.BackColor;
             _unclicked_over = _OpportunityButton.FlatAppearance.MouseOverBackColor;
@@ -62,9 +63,58 @@ namespace TelleCollege
             this.Visible = false;
             this._loginForm = new LoginForm();
             _loginForm.ShowDialog(this);//'this' parameter makes this form the login's owner for future use.
-
         }
+        public void importCustomers()
+        {
+            List<Client> clients = new List<Client>();
+            Client curr = new Client();
+            curr.firstName = "Oneg";
+            curr.lastName = "Lugassy";
+            curr.id = "207912635";
+            curr.birthdate.day = 28;
+            curr.birthdate.month = 4;
+            curr.birthdate.year = 1999;
+            curr.phone = "054-2490249";
+            curr.email = "oneg.lugassy@gmail.com";
+            curr.status = 1;
+            curr.insertionDate.day = 9;
+            curr.insertionDate.month = 12;
+            curr.insertionDate.year = 2018;
+            clients.Add(curr);
 
+            curr.firstName = "Ofek";
+            curr.lastName = "Lugassy";
+            curr.id = "207912635";
+            curr.birthdate.day = 26;
+            curr.birthdate.month = 1;
+            curr.birthdate.year = 1999;
+            curr.phone = "054-2490249";
+            curr.email = "oneg.lugassy@gmail.com";
+            curr.status = 1;
+            curr.insertionDate.day = 9;
+            curr.insertionDate.month = 12;
+            curr.insertionDate.year = 2018;
+            clients.Add(curr);
+
+
+            ListViewItem item;
+            for (int i = 0; i < clients.Count; i++)
+            {
+                item = new ListViewItem((i + 1).ToString());
+                item.SubItems.Add(clients[i].firstName+" "+ clients[i].lastName);
+                item.SubItems.Add(clients[i].id);
+                item.SubItems.Add(clients[i].birthdate.day.ToString()+"/"+ clients[i].birthdate.month.ToString()+"/"+ clients[i].birthdate.year.ToString());
+                item.SubItems.Add(clients[i].phone);
+                item.SubItems.Add(clients[i].email);
+                item.SubItems.Add(clients[i].status.ToString());
+                item.SubItems.Add(clients[i].insertionDate.day.ToString() + "/" + clients[i].insertionDate.month.ToString() + "/" + clients[i].insertionDate.year.ToString());
+
+                this._opportunitiesListView.Items.Add(item);
+
+            }
+
+            
+        }
 
 
         private void minimizeButton1_Click(object sender, EventArgs e)

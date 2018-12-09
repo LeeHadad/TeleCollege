@@ -16,7 +16,7 @@ typedef struct
 typedef struct
 {
 	Date date;
-	char representativeName[41];
+	char representativeName[42];
 	char representativeId[10];
 	char Note[184];
 }History;
@@ -26,11 +26,12 @@ typedef struct Client
 	char firstname[21];
 	char lastname[21];
 	char id[10];
-	char email[31];
-	char phone[12];
 	Date birthday;
-	Date inserted;
+	char phone[12];
+	char email[31];
 	int status;
+	Date inserted;
+	
 	bool courses[6] = { false };
 	History history[30];
 	int history_amount = 0;

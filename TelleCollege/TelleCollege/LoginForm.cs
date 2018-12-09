@@ -44,7 +44,7 @@ namespace TelleCollege
                 (this.Owner as OriginForm).Id = this._idTextBox.Text;
                 this.Owner.Enabled = true;
                 this.Owner.Visible = true;
-
+                (this.Owner as OriginForm).importCustomers();
                 this.Close();
             }
             else
