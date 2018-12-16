@@ -30,6 +30,7 @@ namespace TelleCollege
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this._welcomeLabel = new System.Windows.Forms.Label();
             this._LeadsButton = new System.Windows.Forms.Button();
             this._OpportunityButton = new System.Windows.Forms.Button();
@@ -77,11 +78,18 @@ namespace TelleCollege
             this._sortOpportunityPhone = new System.Windows.Forms.Button();
             this._sortOpportunityEmail = new System.Windows.Forms.Button();
             this._sortOpportunityInsert = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this._addLeadButton = new System.Windows.Forms.Button();
+            this.optionsContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._removeLeadButton = new System.Windows.Forms.Button();
             this._tabLayoutPanel.SuspendLayout();
             this._leadsColumnLayout.SuspendLayout();
             this._leadsPanel.SuspendLayout();
             this._opportunitiesPanel.SuspendLayout();
             this._opportunitiesColumnLayout.SuspendLayout();
+            this.optionsContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // _welcomeLabel
@@ -410,18 +418,22 @@ namespace TelleCollege
             this._leadsListView.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._leadsListView.ForeColor = System.Drawing.Color.AliceBlue;
             this._leadsListView.FullRowSelect = true;
+            this._leadsListView.GridLines = true;
             this._leadsListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this._leadsListView.HideSelection = false;
             this._leadsListView.LabelWrap = false;
             this._leadsListView.Location = new System.Drawing.Point(-1, 0);
             this._leadsListView.MultiSelect = false;
             this._leadsListView.Name = "_leadsListView";
             this._leadsListView.ShowGroups = false;
-            this._leadsListView.Size = new System.Drawing.Size(1397, 646);
+            this._leadsListView.Size = new System.Drawing.Size(1397, 626);
             this._leadsListView.TabIndex = 26;
             this._leadsListView.TabStop = false;
             this._leadsListView.TileSize = new System.Drawing.Size(100, 50);
             this._leadsListView.UseCompatibleStateImageBehavior = false;
             this._leadsListView.View = System.Windows.Forms.View.Details;
+            this._leadsListView.DoubleClick += new System.EventHandler(this._customerListView_DoubleClick);
+            this._leadsListView.MouseClick += new System.Windows.Forms.MouseEventHandler(this._customerListView_MouseClick);
             // 
             // _index
             // 
@@ -431,12 +443,12 @@ namespace TelleCollege
             // _name
             // 
             this._name.Text = "Name";
-            this._name.Width = 303;
+            this._name.Width = 301;
             // 
             // _personalId
             // 
             this._personalId.Text = "Id";
-            this._personalId.Width = 122;
+            this._personalId.Width = 124;
             // 
             // _birthDate
             // 
@@ -446,7 +458,7 @@ namespace TelleCollege
             // _phoneNumber
             // 
             this._phoneNumber.Text = "Phone Number";
-            this._phoneNumber.Width = 172;
+            this._phoneNumber.Width = 171;
             // 
             // _emailAddress
             // 
@@ -466,7 +478,7 @@ namespace TelleCollege
             this._leadsPanel.Controls.Add(this._leadsListView);
             this._leadsPanel.Location = new System.Drawing.Point(5, 131);
             this._leadsPanel.Name = "_leadsPanel";
-            this._leadsPanel.Size = new System.Drawing.Size(1359, 625);
+            this._leadsPanel.Size = new System.Drawing.Size(1359, 605);
             this._leadsPanel.TabIndex = 27;
             // 
             // _opportunitiesPanel
@@ -475,9 +487,9 @@ namespace TelleCollege
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._opportunitiesPanel.Controls.Add(this._opportunitiesListView);
-            this._opportunitiesPanel.Location = new System.Drawing.Point(5, 131);
+            this._opportunitiesPanel.Location = new System.Drawing.Point(5, 130);
             this._opportunitiesPanel.Name = "_opportunitiesPanel";
-            this._opportunitiesPanel.Size = new System.Drawing.Size(1359, 625);
+            this._opportunitiesPanel.Size = new System.Drawing.Size(1359, 605);
             this._opportunitiesPanel.TabIndex = 28;
             this._opportunitiesPanel.Visible = false;
             // 
@@ -501,28 +513,32 @@ namespace TelleCollege
             this._opportunitiesListView.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._opportunitiesListView.ForeColor = System.Drawing.Color.AliceBlue;
             this._opportunitiesListView.FullRowSelect = true;
+            this._opportunitiesListView.GridLines = true;
             this._opportunitiesListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this._opportunitiesListView.HideSelection = false;
             this._opportunitiesListView.LabelWrap = false;
             this._opportunitiesListView.Location = new System.Drawing.Point(-1, 0);
             this._opportunitiesListView.MultiSelect = false;
             this._opportunitiesListView.Name = "_opportunitiesListView";
             this._opportunitiesListView.ShowGroups = false;
-            this._opportunitiesListView.Size = new System.Drawing.Size(1397, 646);
+            this._opportunitiesListView.Size = new System.Drawing.Size(1397, 626);
             this._opportunitiesListView.TabIndex = 26;
             this._opportunitiesListView.TabStop = false;
             this._opportunitiesListView.TileSize = new System.Drawing.Size(100, 50);
             this._opportunitiesListView.UseCompatibleStateImageBehavior = false;
             this._opportunitiesListView.View = System.Windows.Forms.View.Details;
+            this._opportunitiesListView.DoubleClick += new System.EventHandler(this._customerListView_DoubleClick);
+            this._opportunitiesListView.MouseClick += new System.Windows.Forms.MouseEventHandler(this._customerListView_MouseClick);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "#";
-            this.columnHeader1.Width = 73;
+            this.columnHeader1.Width = 69;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Name";
-            this.columnHeader2.Width = 267;
+            this.columnHeader2.Width = 270;
             // 
             // columnHeader3
             // 
@@ -583,6 +599,7 @@ namespace TelleCollege
             this._opportunitiesColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this._opportunitiesColumnLayout.Size = new System.Drawing.Size(1359, 32);
             this._opportunitiesColumnLayout.TabIndex = 29;
+            this._opportunitiesColumnLayout.Visible = false;
             // 
             // _sortOpportunityStatus
             // 
@@ -705,11 +722,84 @@ namespace TelleCollege
             this._sortOpportunityInsert.Text = "Insertion Date";
             this._sortOpportunityInsert.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.Enabled = false;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button1.Location = new System.Drawing.Point(5, 737);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(1359, 1);
+            this.button1.TabIndex = 32;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // _addLeadButton
+            // 
+            this._addLeadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this._addLeadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._addLeadButton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._addLeadButton.ForeColor = System.Drawing.Color.SkyBlue;
+            this._addLeadButton.Location = new System.Drawing.Point(1285, 737);
+            this._addLeadButton.Name = "_addLeadButton";
+            this._addLeadButton.Size = new System.Drawing.Size(26, 26);
+            this._addLeadButton.TabIndex = 36;
+            this._addLeadButton.Text = "+";
+            this._addLeadButton.UseVisualStyleBackColor = true;
+            this._addLeadButton.Click += new System.EventHandler(this._addLeadButton_Click);
+            // 
+            // optionsContextMenuStrip
+            // 
+            this.optionsContextMenuStrip.BackColor = System.Drawing.SystemColors.Menu;
+            this.optionsContextMenuStrip.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionsContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.optionsContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.optionsContextMenuStrip.Name = "contextMenuStrip1";
+            this.optionsContextMenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.optionsContextMenuStrip.Size = new System.Drawing.Size(153, 52);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.editToolStripMenuItem.Text = "Edit...";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.deleteToolStripMenuItem.Text = "Remove...";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
+            // 
+            // _removeLeadButton
+            // 
+            this._removeLeadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this._removeLeadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._removeLeadButton.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._removeLeadButton.ForeColor = System.Drawing.Color.SkyBlue;
+            this._removeLeadButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this._removeLeadButton.Location = new System.Drawing.Point(1310, 737);
+            this._removeLeadButton.Name = "_removeLeadButton";
+            this._removeLeadButton.Size = new System.Drawing.Size(26, 26);
+            this._removeLeadButton.TabIndex = 38;
+            this._removeLeadButton.Text = "-";
+            this._removeLeadButton.UseVisualStyleBackColor = true;
+            this._removeLeadButton.Click += new System.EventHandler(this._removeCustomerButton_Click);
+            // 
             // OriginForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this._removeLeadButton);
+            this.Controls.Add(this._addLeadButton);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this._opportunitiesColumnLayout);
             this.Controls.Add(this._opportunitiesPanel);
             this.Controls.Add(this._welcomeLabel);
@@ -732,12 +822,14 @@ namespace TelleCollege
             this.Name = "OriginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelleCollege";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OriginForm_FormClosed);
             this.Shown += new System.EventHandler(this.OriginForm_Shown);
             this._tabLayoutPanel.ResumeLayout(false);
             this._leadsColumnLayout.ResumeLayout(false);
             this._leadsPanel.ResumeLayout(false);
             this._opportunitiesPanel.ResumeLayout(false);
             this._opportunitiesColumnLayout.ResumeLayout(false);
+            this.optionsContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -792,6 +884,12 @@ namespace TelleCollege
         private Button _sortOpportunityInsert;
         private ColumnHeader columnHeader8;
         private Button _sortOpportunityStatus;
+        private Button button1;
+        private Button _addLeadButton;
+        private ContextMenuStrip optionsContextMenuStrip;
+        private ToolStripMenuItem editToolStripMenuItem;
+        private ToolStripMenuItem deleteToolStripMenuItem;
+        private Button _removeLeadButton;
     }
 }
 

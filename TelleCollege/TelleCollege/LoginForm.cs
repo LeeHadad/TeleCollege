@@ -37,15 +37,25 @@ namespace TelleCollege
 
         private void _loginButton_Click(object sender, EventArgs e)
         {
-            if (this._idTextBox.Text.Length > 0)
+            if (cppLinkage.checkValidID(this._idTextBox.Text)==1)
             {
-                this._errorLabel.Visible = false;
-                this._errorPictureBox.Visible = false;
-                (this.Owner as OriginForm).Id = this._idTextBox.Text;
-                this.Owner.Enabled = true;
-                this.Owner.Visible = true;
-                (this.Owner as OriginForm).importCustomers();
-                this.Close();
+                if (cppLinkage.tryLogin(this._idTextBox.Text))
+                {
+                    this._errorLabel.Visible = false;
+                    this._errorPictureBox.Visible = false;
+                    (this.Owner as OriginForm).Id = this._idTextBox.Text;
+                    (this.Owner as OriginForm).RepName = "Temporary";
+                    this.Owner.Enabled = true;
+                    this.Owner.Visible = true;
+                    (this.Owner as OriginForm).importCustomers();
+                    this.Close();
+                }
+                else
+                {
+                    this._errorLabel.Visible = true;
+                    this._errorPictureBox.Visible = true;
+                }
+
             }
             else
             {

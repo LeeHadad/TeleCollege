@@ -67,9 +67,9 @@
             this._errorLabel.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this._errorLabel.Location = new System.Drawing.Point(193, 98);
             this._errorLabel.Name = "_errorLabel";
-            this._errorLabel.Size = new System.Drawing.Size(145, 18);
+            this._errorLabel.Size = new System.Drawing.Size(152, 18);
             this._errorLabel.TabIndex = 4;
-            this._errorLabel.Text = "Please Enter Your ID";
+            this._errorLabel.Text = "Please Enter a valid Id";
             this._errorLabel.Visible = false;
             // 
             // _focusVessel
@@ -198,7 +198,6 @@
             this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);

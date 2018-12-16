@@ -52,6 +52,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryInfoForm.Designer.cs">
+      <DependentUpon>HistoryInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpportunityInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpportunityInfoForm.Designer.cs">
+      <DependentUpon>OpportunityInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeadInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeadInfoForm.Designer.cs">
+      <DependentUpon>LeadInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="loadingScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +96,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryInfoForm.resx">
+      <DependentUpon>HistoryInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpportunityInfoForm.resx">
+      <DependentUpon>OpportunityInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeadInfoForm.resx">
+      <DependentUpon>LeadInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loadingScreenForm.resx">
       <DependentUpon>loadingScreenForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,7 +117,6 @@
     <EmbeddedResource Include="OriginForm.resx">
       <DependentUpon>OriginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

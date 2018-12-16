@@ -11,6 +11,19 @@ namespace CustomControls_TelleCollege
     [ToolboxBitmap(typeof(CloseButton), "CloseButton")]
     public class CloseButton : Button
     {
+        private bool _terminateOnClick;
+        [DefaultValue(true)]
+        public bool TerminateOnClick
+        {
+            get
+            {
+                return _terminateOnClick;
+            }
+            set
+            {
+                _terminateOnClick = value;
+            }
+        }
         private string _text;
         [DefaultValue("X")]
         public override string Text
@@ -27,6 +40,7 @@ namespace CustomControls_TelleCollege
         public CloseButton()
         {
             _text = "X";
+            _terminateOnClick = true;
             Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             FlatAppearance.BorderSize = 0;
             FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -38,7 +52,10 @@ namespace CustomControls_TelleCollege
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);
-            Application.Exit();
+            if (_terminateOnClick)
+                Application.Exit();
+            else
+                this.FindForm().Close();
         }
     }
     /// <summary>
