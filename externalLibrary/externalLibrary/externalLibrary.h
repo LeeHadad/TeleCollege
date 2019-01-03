@@ -58,6 +58,7 @@ typedef struct
 	History history[30];
 	
 	bool courses[6] = { false };
+	bool discounts[6] = { false };
 	Date callLaterDate;
 	Time callLaterTime;
 
@@ -76,10 +77,14 @@ typedef struct Customerlist
 	Node* tail = NULL;
 	int size = 0;
 }Customerlist;
+typedef struct encasulateString
+{
+	char userName[21];
+}encasulateString;
 
 Customerlist* globalList;
 
-extern "C" ExternalLib_API Customer* __stdcall exportCustomers(int* length);
+extern "C" __declspec(dllexport) Customer* __stdcall exportCustomers(int* length);
 extern "C" ExternalLib_API void _stdcall freeGlobalList();
 
 void fileToList();
@@ -105,7 +110,7 @@ void removeNode(Customerlist &, Node *);
 extern "C" ExternalLib_API void __stdcall addToList(Customerlist &, Customer*);
 
 extern "C" ExternalLib_API void __stdcall validateAndUpdate(int*, Customer cust,char[], int action);
-extern "C" ExternalLib_API bool __stdcall tryLogin(char id[]);
+extern "C" ExternalLib_API bool __stdcall tryLogin(char id[],encasulateString& res);
 
 int checkValidName(char*);
 extern "C" ExternalLib_API int __stdcall checkValidID(char*);

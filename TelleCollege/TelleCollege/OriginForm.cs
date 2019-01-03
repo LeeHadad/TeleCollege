@@ -24,8 +24,8 @@ namespace TelleCollege
         private List<int> _originalLeadsListWidths, _originalOpportunitiesListWidths;
         public OriginForm()
         {
-            //loadingScreenForm loadingScreen = new loadingScreenForm();
-            //loadingScreen.ShowDialog();
+            loadingScreenForm loadingScreen = new loadingScreenForm();
+            loadingScreen.ShowDialog();
             InitializeComponent();
             _unclicked_back = _OpportunityButton.BackColor;
             _unclicked_over = _OpportunityButton.FlatAppearance.MouseOverBackColor;
@@ -59,7 +59,7 @@ namespace TelleCollege
 
         private void OriginForm_Shown(object sender, EventArgs e)
         {
-            this.Size = new System.Drawing.Size((int)(Screen.FromHandle(this.Handle).WorkingArea.Width * (this.Width / 1920.0)), (int)(Screen.FromHandle(this.Handle).WorkingArea.Height * (this.Height / 1080.0)));
+            //this.Size = new System.Drawing.Size((int)(Screen.FromHandle(this.Handle).WorkingArea.Width * (this.Width / 1920.0)), (int)(Screen.FromHandle(this.Handle).WorkingArea.Height * (this.Height / 1080.0)));
             this.Location = new System.Drawing.Point(Screen.FromHandle(this.Handle).WorkingArea.Width / 2 - this.Width / 2, Screen.FromHandle(this.Handle).WorkingArea.Height / 2 - this.Height / 2);
             _maximizeWidthRatio = Screen.FromHandle(this.Handle).WorkingArea.Width / (this.Width * 1.0);
             _originalLeadsListWidths = new List<int>();
@@ -73,6 +73,20 @@ namespace TelleCollege
             {
                 _originalOpportunitiesListWidths.Add(column.Width);
 
+            }
+            int i = 0;
+            foreach (ColumnStyle column in this._leadsColumnLayout.ColumnStyles)
+            {
+                if (i != 6)
+                    column.Width = (float)(this._leadsListView.Columns[i].Width);
+                i++;
+            }
+            i = 0;
+            foreach (ColumnStyle column in this._opportunitiesColumnLayout.ColumnStyles)
+            {
+                if (i != 7)
+                    column.Width = (float)(this._opportunitiesListView.Columns[i].Width);
+                i++;
             }
             this.Visible = false;
             this._loginForm = new LoginForm();
@@ -118,11 +132,11 @@ namespace TelleCollege
                 else
                 {
                     if (customers[i].status == (int)Statuses.status.In_Progress)
-                        item.BackColor = System.Drawing.Color.SteelBlue;
+                        item.BackColor = System.Drawing.Color.FromArgb(0, 60, 100);
                     else if (customers[i].status == (int)Statuses.status.On_Hold)
                         item.BackColor = System.Drawing.Color.SlateGray;
                     else if (customers[i].status == (int)Statuses.status.Irrelevant)
-                        item.BackColor = System.Drawing.Color.Brown;
+                        item.BackColor = System.Drawing.Color.FromArgb(45, 45, 45);
                     else if (customers[i].status == (int)Statuses.status.Sold)
                         item.BackColor = System.Drawing.Color.DarkSlateGray;
 
@@ -147,44 +161,58 @@ namespace TelleCollege
             if (this.WindowState == FormWindowState.Normal)
             {
                 this._welcomeLabel.Location = new System.Drawing.Point((int)(this.Size.Width * _maximizeWidthRatio) / 2 - this._welcomeLabel.Width / 2, this._welcomeLabel.Location.Y);
-                foreach (ColumnStyle column in this._leadsColumnLayout.ColumnStyles)
-                {
-                    column.Width = (float)(column.Width * _maximizeWidthRatio);
-                }
+
                 foreach (ColumnHeader column in this._leadsListView.Columns)
                 {
                     column.Width = (int)(column.Width * _maximizeWidthRatio) + 2;
                 }
-                foreach (ColumnStyle column in this._opportunitiesColumnLayout.ColumnStyles)
-                {
-                    column.Width = (float)(column.Width * _maximizeWidthRatio);
-                }
+
                 foreach (ColumnHeader column in this._opportunitiesListView.Columns)
                 {
                     column.Width = (int)(column.Width * _maximizeWidthRatio) + 2;
+                }
+                int i = 0;
+                foreach (ColumnStyle column in this._leadsColumnLayout.ColumnStyles)
+                {
+                    if(i!=6)
+                        column.Width = (float)(this._leadsListView.Columns[i].Width);
+                    i++;
+                }
+                i = 0;
+                foreach (ColumnStyle column in this._opportunitiesColumnLayout.ColumnStyles)
+                {
+                    if (i != 7)
+                        column.Width = (float)(this._opportunitiesListView.Columns[i].Width);
+                    i++;
                 }
             }
             else
             {
                 this._welcomeLabel.Location = new System.Drawing.Point((int)(this.Size.Width / _maximizeWidthRatio) / 2 - this._welcomeLabel.Width / 2, this._welcomeLabel.Location.Y);
                 int i = 0;
-                foreach (ColumnStyle column in this._leadsColumnLayout.ColumnStyles)
-                {
-                    column.Width = (float)(column.Width * (1.0 / _maximizeWidthRatio));
-                }
                 foreach (ColumnHeader column in this._leadsListView.Columns)
                 {
                     column.Width = _originalLeadsListWidths[i];
                     i++;
                 }
                 i = 0;
-                foreach (ColumnStyle column in this._opportunitiesColumnLayout.ColumnStyles)
-                {
-                    column.Width = (float)(column.Width * (1.0 / _maximizeWidthRatio));
-                }
                 foreach (ColumnHeader column in this._opportunitiesListView.Columns)
                 {
                     column.Width = _originalOpportunitiesListWidths[i];
+                    i++;
+                }
+                i = 0;
+                foreach (ColumnStyle column in this._leadsColumnLayout.ColumnStyles)
+                {
+                    if (i != 6)
+                        column.Width = (float)(this._leadsListView.Columns[i].Width);
+                    i++;
+                }
+                i = 0;
+                foreach (ColumnStyle column in this._opportunitiesColumnLayout.ColumnStyles)
+                {
+                    if (i != 7)
+                        column.Width = (float)(this._opportunitiesListView.Columns[i].Width);
                     i++;
                 }
             }
@@ -216,6 +244,7 @@ namespace TelleCollege
                     else
                     {
                         OpportunityInfoForm op = new OpportunityInfoForm(clone, 0);
+
                         op.ShowDialog(this);
                     }
 
@@ -259,13 +288,14 @@ namespace TelleCollege
                                     item.SubItems.Add(Statuses.statuses[customers[i].status - 1]);
                                 item.SubItems.Add(customers[i].inserted.day.ToString() + "/" + customers[i].inserted.month.ToString() + "/" + customers[i].inserted.year.ToString());
                                 if (customers[i].status == (int)Statuses.status.In_Progress)
-                                    item.BackColor = System.Drawing.Color.SteelBlue;
+                                    item.BackColor = System.Drawing.Color.FromArgb(0, 60, 100);
                                 else if (customers[i].status == (int)Statuses.status.On_Hold)
                                     item.BackColor = System.Drawing.Color.SlateGray;
                                 else if (customers[i].status == (int)Statuses.status.Irrelevant)
-                                    item.BackColor = System.Drawing.Color.Brown;
+                                    item.BackColor = System.Drawing.Color.FromArgb(45, 45, 45);
                                 else if (customers[i].status == (int)Statuses.status.Sold)
                                     item.BackColor = System.Drawing.Color.DarkSlateGray;
+
                                 this._opportunitiesListView.Items.Add(item);
                                 item.Selected = true;
                                 _opportunitiesListView.Select();
@@ -287,13 +317,14 @@ namespace TelleCollege
                                 {
                                     currListView.FocusedItem.SubItems[6].Text = Statuses.statuses[customers[i].status - 1];
                                     if (customers[i].status == (int)Statuses.status.In_Progress)
-                                        currListView.FocusedItem.BackColor = System.Drawing.Color.SteelBlue;
+                                        currListView.FocusedItem.BackColor = System.Drawing.Color.FromArgb(0, 60, 100);
                                     else if (customers[i].status == (int)Statuses.status.On_Hold)
                                         currListView.FocusedItem.BackColor = System.Drawing.Color.SlateGray;
                                     else if (customers[i].status == (int)Statuses.status.Irrelevant)
-                                        currListView.FocusedItem.BackColor = System.Drawing.Color.Brown;
+                                        currListView.FocusedItem.BackColor = System.Drawing.Color.FromArgb(45, 45, 45);
                                     else if (customers[i].status == (int)Statuses.status.Sold)
                                         currListView.FocusedItem.BackColor = System.Drawing.Color.DarkSlateGray;
+
                                 }
 
                             }

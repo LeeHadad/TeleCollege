@@ -1,0 +1,36 @@
+****
+Name:Dor Levi
+Id:207912665
+Email:dor@gmail.com
+Phone:054-2490249
+Birthdate:26/1/1999
+Status:1
+Insertion date:8/12/2018
+Courses:,2
+****
+Name:Avi Israel
+Id:204587651
+Email:aviis@gmail.com
+Phone:054-2450239
+Birthdate:28/4/1999
+Status:4
+Insertion date:8/12/2018
+Courses:,5
+****
+Name:bar ilan
+Id:205617342
+Email:bar@gmail.com
+Phone:052-6537122
+Birthdate:-1/0/0
+Status:3
+Insertion date:23/12/2018
+Courses:
+****
+Name:ofek lugassy
+Id:209239276
+Email:ofek@gmail.com
+Phone:052-4771955
+Birthdate:-1/0/0
+Status:2
+Insertion date:23/12/2018
+Courses:

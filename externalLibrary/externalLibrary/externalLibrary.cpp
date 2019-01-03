@@ -94,13 +94,27 @@ void fileToList()
 		if (brokenInfo != "")
 		{
 
-			char str[12];
+			char str[17];
 			strcpy(str, brokenInfo.c_str());
 			char* course = strtok(str, ",");
 			while (course != NULL)
 			{
 				temp->courses[atoi(course) - 1] = true;
 				course = strtok(NULL, ",");
+			}
+		}
+		std::getline(CustomersFile, currLine);
+		brokenInfo = currLine.substr(currLine.find("Discounts:") + 10);
+		if (brokenInfo != "")
+		{
+
+			char str[17];
+			strcpy(str, brokenInfo.c_str());
+			char* discount = strtok(str, ",");
+			while (discount != NULL)
+			{
+				temp->discounts[atoi(discount) - 1] = true;
+				discount = strtok(NULL, ",");
 			}
 		}
 		addToList(*globalList, temp);
@@ -164,9 +178,10 @@ void assignHistory(Customerlist &list)
 	}
 	historyFile.close();
 }
-
-bool __stdcall tryLogin(char id[])
+bool __stdcall tryLogin(char id[],encasulateString& res)
 {
+
+	strcpy(res.userName, "");
 	std::ifstream usersFile("Users.txt");
 	if (!usersFile.is_open())
 	{
@@ -184,10 +199,14 @@ bool __stdcall tryLogin(char id[])
 		if (idCheck.substr(idCheck.find("Id:") + 3) == id)
 		{
 			usersFile.close();
+			curr = curr.substr(curr.find("Name:") + 5);
+			strcpy(res.userName, curr.c_str());
 			return true;
 		}
 	}
+	strcpy(res.userName, "");
 	usersFile.close();
+
 	return false;
 }
 void assignCallLater(Customerlist &list)
@@ -263,7 +282,10 @@ void printList(Customerlist &list)
 
 		std::cout << curr->customer->courses[0] << ", " << curr->customer->courses[1] << ", " << curr->customer->courses[2] << ", " << curr->customer->courses[3] << ", "
 			<< curr->customer->courses[4] << ", " << curr->customer->courses[5] << ", " << std::endl << std::endl;
-
+		
+		std::cout << curr->customer->discounts[0] << ", " << curr->customer->discounts[1] << ", " << curr->customer->discounts[2] << ", " << curr->customer->discounts[3] << ", "
+			<< curr->customer->discounts[4] << ", " << curr->customer->discounts[5] << ", " << std::endl << std::endl;
+		
 		std::cout << "****History:****" << std::endl;
 		for (int i = 0; i < curr->customer->history_amount; i++)
 		{
@@ -296,7 +318,10 @@ Customer* listToArray(Customerlist &list, int* length) {
 		cust_arr[i].status = curr->status;
 		cust_arr[i].inserted = curr->inserted;
 		for (int j = 0; j < 6; j++)
+		{
 			cust_arr[i].courses[j] = curr->courses[j];
+			cust_arr[i].discounts[j] = curr->discounts[j];
+		}
 		cust_arr[i].history_amount = curr->history_amount;
 		for (int j = 0; j < cust_arr[i].history_amount; j++)
 		{
@@ -424,13 +449,36 @@ bool addToCustomerFile(Customer cust) {
 	txt += dateToStr(cust.inserted);
 	txt += "\n";
 	txt += "Courses:";
+	bool first = true;
 	for (int i = 0; i < 6; i++)
 	{
 		if (cust.courses[i])
 		{
-			if (i != 0)
+			if (!first)
+			{
 				txt += ",";
+				first = false;
+			}
+
 			txt += std::to_string(i + 1);
+
+			if (first) first = false;
+		}
+	}
+	txt += "\nDiscounts:";
+	first = true;
+	for (int i = 0; i < 6; i++)
+	{
+		if (cust.discounts[i])
+		{
+			if (!first)
+			{
+				txt += ",";
+				first = false;
+			}
+			txt += std::to_string(i + 1);
+
+			if (first) first = false;
 		}
 	}
 
@@ -448,7 +496,10 @@ bool addToCustomerFile(Customer cust) {
 	temp->status = cust.status;
 	temp->inserted = cust.inserted;
 	for (int j = 0; j < 6; j++)
+	{
 		temp->courses[j] = cust.courses[j];
+		temp->discounts[j] = cust.discounts[j];
+	}
 	temp->history_amount = cust.history_amount;
 	for (int j = 0; j < cust.history_amount; j++)
 	{
@@ -627,18 +678,41 @@ bool editOrRemoveCustomer(char id[], Customer cust, int action, int editCallLate
 				res += "\n";
 				res += "Courses:";
 
+				bool first = true;
 				for (int i = 0; i < 6; i++)
 				{
 					if (cust.courses[i])
 					{
-						if (i != 0)
+						if (!first)
+						{
 							res += ",";
+							first = false;
+						}
+
 						res += std::to_string(i + 1);
+
+						if (first) first = false;
+					}
+				}
+				res += "\nDiscounts:";
+				first = true;
+				for (int i = 0; i < 6; i++)
+				{
+					if (cust.discounts[i])
+					{
+						if (!first)
+						{
+							res += ",";
+							first = false;
+						}
+						res += std::to_string(i + 1);
+
+						if (first) first = false;
 					}
 				}
 			}
 
-			while (curr.find("Courses:") == string::npos)//get rid of rest of the old customer text data
+			while (curr.find("Discounts:") == string::npos)//get rid of rest of the old customer text data
 				std::getline(customerFile, curr);
 
 
@@ -653,7 +727,7 @@ bool editOrRemoveCustomer(char id[], Customer cust, int action, int editCallLate
 			res += "****\n";
 			res += nameLine + "\n";
 			res += curr;
-			while (curr.find("Courses:") == string::npos)
+			while (curr.find("Discounts:") == string::npos)
 			{
 				res += "\n";
 				std::getline(customerFile, curr);
@@ -710,7 +784,10 @@ bool editOrRemoveCustomer(char id[], Customer cust, int action, int editCallLate
 		toEdit->status = cust.status;
 		toEdit->inserted = cust.inserted;
 		for (int j = 0; j < 6; j++)
+		{
 			toEdit->courses[j] = cust.courses[j];
+			toEdit->discounts[j] = cust.discounts[j];
+		}
 		toEdit->history_amount = cust.history_amount;
 		for (int j = 0; j < toEdit->history_amount; j++)
 		{

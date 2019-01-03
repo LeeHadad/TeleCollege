@@ -24,9 +24,6 @@ D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Deb
 D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\bin\Debug\CustomControls_TelleCollege.dll
 D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\bin\Debug\CustomControls_TelleCollege.pdb
 D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.csproj.CopyComplete
-D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\bin\Debug\C1.Win.C1List.2.xml
-D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\bin\Debug\C1.Win.C1List.4.xml
-D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.exe.licenses
 F:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\bin\Debug\TelleCollege.exe.config
 F:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\bin\Debug\TelleCollege.exe
 F:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\bin\Debug\TelleCollege.pdb
@@ -46,3 +43,9 @@ F:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Deb
 F:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.OpportunityInfoForm.resources
 F:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.HistoryForm.resources
 F:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.HistoryInfoForm.resources
+E:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.exe
+E:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.pdb
+D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.HistoryForm.resources
+D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.HistoryInfoForm.resources
+D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.OpportunityInfoForm.resources
+D:\SCE\Year #2\Software Engineering Basics\GIT\TelleCollege\TelleCollege\obj\Debug\TelleCollege.LeadInfoForm.resources

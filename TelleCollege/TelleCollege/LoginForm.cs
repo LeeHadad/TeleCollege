@@ -39,12 +39,13 @@ namespace TelleCollege
         {
             if (cppLinkage.checkValidID(this._idTextBox.Text)==1)
             {
-                if (cppLinkage.tryLogin(this._idTextBox.Text))
+                encapsulateString res = new encapsulateString();
+                if (cppLinkage.tryLogin(this._idTextBox.Text,ref res))
                 {
                     this._errorLabel.Visible = false;
                     this._errorPictureBox.Visible = false;
                     (this.Owner as OriginForm).Id = this._idTextBox.Text;
-                    (this.Owner as OriginForm).RepName = "Temporary";
+                    (this.Owner as OriginForm).RepName = res.userName;
                     this.Owner.Enabled = true;
                     this.Owner.Visible = true;
                     (this.Owner as OriginForm).importCustomers();

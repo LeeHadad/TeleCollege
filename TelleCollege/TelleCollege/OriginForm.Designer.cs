@@ -42,14 +42,6 @@ namespace TelleCollege
             this.minimizeButton1 = new CustomControls_TelleCollege.MinimizeButton();
             this.topBar2 = new CustomControls_TelleCollege.TopBar();
             this._outlineButton2 = new System.Windows.Forms.Button();
-            this._leadsColumnLayout = new System.Windows.Forms.TableLayoutPanel();
-            this._sortLeadIndex = new System.Windows.Forms.Button();
-            this._sortLeadsName = new System.Windows.Forms.Button();
-            this._sortLeadsId = new System.Windows.Forms.Button();
-            this._sortLeadsBirth = new System.Windows.Forms.Button();
-            this._sortLeadsPhone = new System.Windows.Forms.Button();
-            this._sortleadsEmail = new System.Windows.Forms.Button();
-            this._sortLeadsInsert = new System.Windows.Forms.Button();
             this._leadsListView = new System.Windows.Forms.ListView();
             this._index = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this._name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -84,12 +76,20 @@ namespace TelleCollege
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._removeLeadButton = new System.Windows.Forms.Button();
+            this._sortLeadsInsert = new System.Windows.Forms.Button();
+            this._sortleadsEmail = new System.Windows.Forms.Button();
+            this._sortLeadsPhone = new System.Windows.Forms.Button();
+            this._sortLeadsBirth = new System.Windows.Forms.Button();
+            this._sortLeadsId = new System.Windows.Forms.Button();
+            this._sortLeadsName = new System.Windows.Forms.Button();
+            this._sortLeadIndex = new System.Windows.Forms.Button();
+            this._leadsColumnLayout = new System.Windows.Forms.TableLayoutPanel();
             this._tabLayoutPanel.SuspendLayout();
-            this._leadsColumnLayout.SuspendLayout();
             this._leadsPanel.SuspendLayout();
             this._opportunitiesPanel.SuspendLayout();
             this._opportunitiesColumnLayout.SuspendLayout();
             this.optionsContextMenuStrip.SuspendLayout();
+            this._leadsColumnLayout.SuspendLayout();
             this.SuspendLayout();
             // 
             // _welcomeLabel
@@ -264,140 +264,6 @@ namespace TelleCollege
             this._outlineButton2.Size = new System.Drawing.Size(1359, 3);
             this._outlineButton2.TabIndex = 22;
             this._outlineButton2.UseVisualStyleBackColor = true;
-            // 
-            // _leadsColumnLayout
-            // 
-            this._leadsColumnLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._leadsColumnLayout.ColumnCount = 7;
-            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.52632F));
-            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.47369F));
-            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
-            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
-            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 437F));
-            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this._leadsColumnLayout.Controls.Add(this._sortLeadIndex, 0, 0);
-            this._leadsColumnLayout.Controls.Add(this._sortLeadsName, 1, 0);
-            this._leadsColumnLayout.Controls.Add(this._sortLeadsId, 2, 0);
-            this._leadsColumnLayout.Controls.Add(this._sortLeadsBirth, 3, 0);
-            this._leadsColumnLayout.Controls.Add(this._sortLeadsPhone, 4, 0);
-            this._leadsColumnLayout.Controls.Add(this._sortleadsEmail, 5, 0);
-            this._leadsColumnLayout.Controls.Add(this._sortLeadsInsert, 6, 0);
-            this._leadsColumnLayout.Location = new System.Drawing.Point(5, 96);
-            this._leadsColumnLayout.Margin = new System.Windows.Forms.Padding(0);
-            this._leadsColumnLayout.Name = "_leadsColumnLayout";
-            this._leadsColumnLayout.RowCount = 1;
-            this._leadsColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this._leadsColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this._leadsColumnLayout.Size = new System.Drawing.Size(1359, 32);
-            this._leadsColumnLayout.TabIndex = 25;
-            // 
-            // _sortLeadIndex
-            // 
-            this._sortLeadIndex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._sortLeadIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._sortLeadIndex.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._sortLeadIndex.Location = new System.Drawing.Point(0, 0);
-            this._sortLeadIndex.Margin = new System.Windows.Forms.Padding(0);
-            this._sortLeadIndex.Name = "_sortLeadIndex";
-            this._sortLeadIndex.Size = new System.Drawing.Size(77, 32);
-            this._sortLeadIndex.TabIndex = 0;
-            this._sortLeadIndex.Text = "  #   v";
-            this._sortLeadIndex.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this._sortLeadIndex.UseVisualStyleBackColor = true;
-            // 
-            // _sortLeadsName
-            // 
-            this._sortLeadsName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._sortLeadsName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._sortLeadsName.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._sortLeadsName.Location = new System.Drawing.Point(77, 0);
-            this._sortLeadsName.Margin = new System.Windows.Forms.Padding(0);
-            this._sortLeadsName.Name = "_sortLeadsName";
-            this._sortLeadsName.Size = new System.Drawing.Size(301, 32);
-            this._sortLeadsName.TabIndex = 1;
-            this._sortLeadsName.Text = "Full Name";
-            this._sortLeadsName.UseVisualStyleBackColor = true;
-            // 
-            // _sortLeadsId
-            // 
-            this._sortLeadsId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._sortLeadsId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._sortLeadsId.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._sortLeadsId.Location = new System.Drawing.Point(378, 0);
-            this._sortLeadsId.Margin = new System.Windows.Forms.Padding(0);
-            this._sortLeadsId.Name = "_sortLeadsId";
-            this._sortLeadsId.Size = new System.Drawing.Size(124, 32);
-            this._sortLeadsId.TabIndex = 2;
-            this._sortLeadsId.Text = "Id";
-            this._sortLeadsId.UseVisualStyleBackColor = true;
-            // 
-            // _sortLeadsBirth
-            // 
-            this._sortLeadsBirth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._sortLeadsBirth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._sortLeadsBirth.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._sortLeadsBirth.Location = new System.Drawing.Point(502, 0);
-            this._sortLeadsBirth.Margin = new System.Windows.Forms.Padding(0);
-            this._sortLeadsBirth.Name = "_sortLeadsBirth";
-            this._sortLeadsBirth.Size = new System.Drawing.Size(123, 32);
-            this._sortLeadsBirth.TabIndex = 3;
-            this._sortLeadsBirth.Text = "Birth Date";
-            this._sortLeadsBirth.UseVisualStyleBackColor = true;
-            // 
-            // _sortLeadsPhone
-            // 
-            this._sortLeadsPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._sortLeadsPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._sortLeadsPhone.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._sortLeadsPhone.Location = new System.Drawing.Point(625, 0);
-            this._sortLeadsPhone.Margin = new System.Windows.Forms.Padding(0);
-            this._sortLeadsPhone.Name = "_sortLeadsPhone";
-            this._sortLeadsPhone.Size = new System.Drawing.Size(171, 32);
-            this._sortLeadsPhone.TabIndex = 4;
-            this._sortLeadsPhone.Text = "Phone Number";
-            this._sortLeadsPhone.UseVisualStyleBackColor = true;
-            // 
-            // _sortleadsEmail
-            // 
-            this._sortleadsEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._sortleadsEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._sortleadsEmail.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._sortleadsEmail.Location = new System.Drawing.Point(796, 0);
-            this._sortleadsEmail.Margin = new System.Windows.Forms.Padding(0);
-            this._sortleadsEmail.Name = "_sortleadsEmail";
-            this._sortleadsEmail.Size = new System.Drawing.Size(437, 32);
-            this._sortleadsEmail.TabIndex = 5;
-            this._sortleadsEmail.Text = "Email Address";
-            this._sortleadsEmail.UseVisualStyleBackColor = true;
-            // 
-            // _sortLeadsInsert
-            // 
-            this._sortLeadsInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._sortLeadsInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._sortLeadsInsert.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._sortLeadsInsert.Location = new System.Drawing.Point(1233, 0);
-            this._sortLeadsInsert.Margin = new System.Windows.Forms.Padding(0);
-            this._sortLeadsInsert.Name = "_sortLeadsInsert";
-            this._sortLeadsInsert.Size = new System.Drawing.Size(126, 32);
-            this._sortLeadsInsert.TabIndex = 6;
-            this._sortLeadsInsert.Text = "Insertion Date";
-            this._sortLeadsInsert.UseVisualStyleBackColor = true;
             // 
             // _leadsListView
             // 
@@ -575,14 +441,14 @@ namespace TelleCollege
             this._opportunitiesColumnLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._opportunitiesColumnLayout.ColumnCount = 8;
-            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.52632F));
-            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.47369F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 269F));
             this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
             this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
             this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
             this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
-            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this._opportunitiesColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
             this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityStatus, 6, 0);
             this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityIndex, 0, 0);
             this._opportunitiesColumnLayout.Controls.Add(this._sortOpportunityName, 1, 0);
@@ -595,17 +461,14 @@ namespace TelleCollege
             this._opportunitiesColumnLayout.Margin = new System.Windows.Forms.Padding(0);
             this._opportunitiesColumnLayout.Name = "_opportunitiesColumnLayout";
             this._opportunitiesColumnLayout.RowCount = 1;
-            this._opportunitiesColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this._opportunitiesColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._opportunitiesColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this._opportunitiesColumnLayout.Size = new System.Drawing.Size(1359, 32);
             this._opportunitiesColumnLayout.TabIndex = 29;
             this._opportunitiesColumnLayout.Visible = false;
             // 
             // _sortOpportunityStatus
             // 
-            this._sortOpportunityStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityStatus.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityStatus.Location = new System.Drawing.Point(1109, 0);
@@ -618,9 +481,7 @@ namespace TelleCollege
             // 
             // _sortOpportunityIndex
             // 
-            this._sortOpportunityIndex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityIndex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityIndex.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityIndex.Location = new System.Drawing.Point(0, 0);
@@ -634,9 +495,7 @@ namespace TelleCollege
             // 
             // _sortOpportunityName
             // 
-            this._sortOpportunityName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityName.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityName.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityName.Location = new System.Drawing.Point(69, 0);
@@ -649,9 +508,7 @@ namespace TelleCollege
             // 
             // _sortOpportunityId
             // 
-            this._sortOpportunityId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityId.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityId.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityId.Location = new System.Drawing.Point(338, 0);
@@ -664,9 +521,7 @@ namespace TelleCollege
             // 
             // _sortOpportunityBirth
             // 
-            this._sortOpportunityBirth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityBirth.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityBirth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityBirth.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityBirth.Location = new System.Drawing.Point(461, 0);
@@ -679,9 +534,7 @@ namespace TelleCollege
             // 
             // _sortOpportunityPhone
             // 
-            this._sortOpportunityPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityPhone.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityPhone.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityPhone.Location = new System.Drawing.Point(589, 0);
@@ -694,9 +547,7 @@ namespace TelleCollege
             // 
             // _sortOpportunityEmail
             // 
-            this._sortOpportunityEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityEmail.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityEmail.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityEmail.Location = new System.Drawing.Point(759, 0);
@@ -709,9 +560,7 @@ namespace TelleCollege
             // 
             // _sortOpportunityInsert
             // 
-            this._sortOpportunityInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sortOpportunityInsert.Dock = System.Windows.Forms.DockStyle.Fill;
             this._sortOpportunityInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._sortOpportunityInsert.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._sortOpportunityInsert.Location = new System.Drawing.Point(1241, 0);
@@ -743,7 +592,7 @@ namespace TelleCollege
             this._addLeadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._addLeadButton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._addLeadButton.ForeColor = System.Drawing.Color.SkyBlue;
-            this._addLeadButton.Location = new System.Drawing.Point(1285, 737);
+            this._addLeadButton.Location = new System.Drawing.Point(1314, 737);
             this._addLeadButton.Name = "_addLeadButton";
             this._addLeadButton.Size = new System.Drawing.Size(26, 26);
             this._addLeadButton.TabIndex = 36;
@@ -784,13 +633,133 @@ namespace TelleCollege
             this._removeLeadButton.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._removeLeadButton.ForeColor = System.Drawing.Color.SkyBlue;
             this._removeLeadButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this._removeLeadButton.Location = new System.Drawing.Point(1310, 737);
+            this._removeLeadButton.Location = new System.Drawing.Point(1339, 737);
             this._removeLeadButton.Name = "_removeLeadButton";
             this._removeLeadButton.Size = new System.Drawing.Size(26, 26);
             this._removeLeadButton.TabIndex = 38;
             this._removeLeadButton.Text = "-";
             this._removeLeadButton.UseVisualStyleBackColor = true;
             this._removeLeadButton.Click += new System.EventHandler(this._removeCustomerButton_Click);
+            // 
+            // _sortLeadsInsert
+            // 
+            this._sortLeadsInsert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._sortLeadsInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsInsert.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsInsert.Location = new System.Drawing.Point(1233, 0);
+            this._sortLeadsInsert.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsInsert.Name = "_sortLeadsInsert";
+            this._sortLeadsInsert.Size = new System.Drawing.Size(126, 32);
+            this._sortLeadsInsert.TabIndex = 6;
+            this._sortLeadsInsert.Text = "Insertion Date";
+            this._sortLeadsInsert.UseVisualStyleBackColor = true;
+            // 
+            // _sortleadsEmail
+            // 
+            this._sortleadsEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._sortleadsEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortleadsEmail.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortleadsEmail.Location = new System.Drawing.Point(796, 0);
+            this._sortleadsEmail.Margin = new System.Windows.Forms.Padding(0);
+            this._sortleadsEmail.Name = "_sortleadsEmail";
+            this._sortleadsEmail.Size = new System.Drawing.Size(437, 32);
+            this._sortleadsEmail.TabIndex = 5;
+            this._sortleadsEmail.Text = "Email Address";
+            this._sortleadsEmail.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsPhone
+            // 
+            this._sortLeadsPhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._sortLeadsPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsPhone.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsPhone.Location = new System.Drawing.Point(625, 0);
+            this._sortLeadsPhone.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsPhone.Name = "_sortLeadsPhone";
+            this._sortLeadsPhone.Size = new System.Drawing.Size(171, 32);
+            this._sortLeadsPhone.TabIndex = 4;
+            this._sortLeadsPhone.Text = "Phone Number";
+            this._sortLeadsPhone.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsBirth
+            // 
+            this._sortLeadsBirth.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._sortLeadsBirth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsBirth.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsBirth.Location = new System.Drawing.Point(502, 0);
+            this._sortLeadsBirth.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsBirth.Name = "_sortLeadsBirth";
+            this._sortLeadsBirth.Size = new System.Drawing.Size(123, 32);
+            this._sortLeadsBirth.TabIndex = 3;
+            this._sortLeadsBirth.Text = "Birth Date";
+            this._sortLeadsBirth.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsId
+            // 
+            this._sortLeadsId.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._sortLeadsId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsId.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsId.Location = new System.Drawing.Point(378, 0);
+            this._sortLeadsId.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsId.Name = "_sortLeadsId";
+            this._sortLeadsId.Size = new System.Drawing.Size(124, 32);
+            this._sortLeadsId.TabIndex = 2;
+            this._sortLeadsId.Text = "Id";
+            this._sortLeadsId.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadsName
+            // 
+            this._sortLeadsName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._sortLeadsName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadsName.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadsName.Location = new System.Drawing.Point(77, 0);
+            this._sortLeadsName.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadsName.Name = "_sortLeadsName";
+            this._sortLeadsName.Size = new System.Drawing.Size(301, 32);
+            this._sortLeadsName.TabIndex = 1;
+            this._sortLeadsName.Text = "Full Name";
+            this._sortLeadsName.UseVisualStyleBackColor = true;
+            // 
+            // _sortLeadIndex
+            // 
+            this._sortLeadIndex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._sortLeadIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._sortLeadIndex.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._sortLeadIndex.Location = new System.Drawing.Point(0, 0);
+            this._sortLeadIndex.Margin = new System.Windows.Forms.Padding(0);
+            this._sortLeadIndex.Name = "_sortLeadIndex";
+            this._sortLeadIndex.Size = new System.Drawing.Size(77, 32);
+            this._sortLeadIndex.TabIndex = 0;
+            this._sortLeadIndex.Text = "  #   v";
+            this._sortLeadIndex.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this._sortLeadIndex.UseVisualStyleBackColor = true;
+            // 
+            // _leadsColumnLayout
+            // 
+            this._leadsColumnLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._leadsColumnLayout.ColumnCount = 7;
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 301F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 437F));
+            this._leadsColumnLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
+            this._leadsColumnLayout.Controls.Add(this._sortLeadIndex, 0, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsName, 1, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsId, 2, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsBirth, 3, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsPhone, 4, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortleadsEmail, 5, 0);
+            this._leadsColumnLayout.Controls.Add(this._sortLeadsInsert, 6, 0);
+            this._leadsColumnLayout.Location = new System.Drawing.Point(4, 96);
+            this._leadsColumnLayout.Margin = new System.Windows.Forms.Padding(0);
+            this._leadsColumnLayout.Name = "_leadsColumnLayout";
+            this._leadsColumnLayout.RowCount = 1;
+            this._leadsColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._leadsColumnLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._leadsColumnLayout.Size = new System.Drawing.Size(1359, 32);
+            this._leadsColumnLayout.TabIndex = 25;
             // 
             // OriginForm
             // 
@@ -825,11 +794,11 @@ namespace TelleCollege
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OriginForm_FormClosed);
             this.Shown += new System.EventHandler(this.OriginForm_Shown);
             this._tabLayoutPanel.ResumeLayout(false);
-            this._leadsColumnLayout.ResumeLayout(false);
             this._leadsPanel.ResumeLayout(false);
             this._opportunitiesPanel.ResumeLayout(false);
             this._opportunitiesColumnLayout.ResumeLayout(false);
             this.optionsContextMenuStrip.ResumeLayout(false);
+            this._leadsColumnLayout.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -848,14 +817,6 @@ namespace TelleCollege
         private CustomControls_TelleCollege.TopBar topBar2;
         private CustomControls_TelleCollege.MaximizeButton maximizeButton1;
         private Button _outlineButton2;
-        private TableLayoutPanel _leadsColumnLayout;
-        private Button _sortLeadIndex;
-        private Button _sortLeadsName;
-        private Button _sortLeadsId;
-        private Button _sortLeadsBirth;
-        private Button _sortLeadsPhone;
-        private Button _sortleadsEmail;
-        private Button _sortLeadsInsert;
         private ListView _leadsListView;
         private ColumnHeader _index;
         private ColumnHeader _name;
@@ -890,6 +851,14 @@ namespace TelleCollege
         private ToolStripMenuItem editToolStripMenuItem;
         private ToolStripMenuItem deleteToolStripMenuItem;
         private Button _removeLeadButton;
+        private Button _sortLeadsInsert;
+        private Button _sortleadsEmail;
+        private Button _sortLeadsPhone;
+        private Button _sortLeadsBirth;
+        private Button _sortLeadsId;
+        private Button _sortLeadsName;
+        private Button _sortLeadIndex;
+        private TableLayoutPanel _leadsColumnLayout;
     }
 }
 

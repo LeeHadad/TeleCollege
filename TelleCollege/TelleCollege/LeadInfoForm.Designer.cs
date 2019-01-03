@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this._idTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this._phoneTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this._birthDatePicker = new System.Windows.Forms.DateTimePicker();
@@ -51,6 +50,9 @@
             this._emailTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this._opportunityChangeButton = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this._phoneContentTextBox = new System.Windows.Forms.TextBox();
+            this._phoneInitialTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // _outline1
@@ -177,19 +179,6 @@
             this.label3.Size = new System.Drawing.Size(27, 21);
             this.label3.TabIndex = 16;
             this.label3.Text = "Id";
-            // 
-            // _phoneTextBox
-            // 
-            this._phoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this._phoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._phoneTextBox.ForeColor = System.Drawing.SystemColors.Menu;
-            this._phoneTextBox.Location = new System.Drawing.Point(288, 121);
-            this._phoneTextBox.MaxLength = 11;
-            this._phoneTextBox.Name = "_phoneTextBox";
-            this._phoneTextBox.Size = new System.Drawing.Size(244, 28);
-            this._phoneTextBox.TabIndex = 21;
-            this._phoneTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._phoneTextBox.Click += new System.EventHandler(this._enterTextBox_Click);
             // 
             // label5
             // 
@@ -359,6 +348,41 @@
             this._opportunityChangeButton.UseVisualStyleBackColor = true;
             this._opportunityChangeButton.Click += new System.EventHandler(this._opportunityChangeButton_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.SkyBlue;
+            this.label13.Location = new System.Drawing.Point(360, 122);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(18, 23);
+            this.label13.TabIndex = 55;
+            this.label13.Text = "-";
+            // 
+            // _phoneContentTextBox
+            // 
+            this._phoneContentTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this._phoneContentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._phoneContentTextBox.ForeColor = System.Drawing.SystemColors.Menu;
+            this._phoneContentTextBox.Location = new System.Drawing.Point(387, 121);
+            this._phoneContentTextBox.MaxLength = 7;
+            this._phoneContentTextBox.Name = "_phoneContentTextBox";
+            this._phoneContentTextBox.Size = new System.Drawing.Size(145, 28);
+            this._phoneContentTextBox.TabIndex = 54;
+            this._phoneContentTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // _phoneInitialTextBox
+            // 
+            this._phoneInitialTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this._phoneInitialTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._phoneInitialTextBox.ForeColor = System.Drawing.SystemColors.Menu;
+            this._phoneInitialTextBox.Location = new System.Drawing.Point(288, 122);
+            this._phoneInitialTextBox.MaxLength = 3;
+            this._phoneInitialTextBox.Name = "_phoneInitialTextBox";
+            this._phoneInitialTextBox.Size = new System.Drawing.Size(62, 28);
+            this._phoneInitialTextBox.TabIndex = 53;
+            this._phoneInitialTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // LeadInfoForm
             // 
             this.AcceptButton = this._okButton;
@@ -367,6 +391,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.CancelButton = this._cancelButton;
             this.ClientSize = new System.Drawing.Size(820, 246);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this._phoneContentTextBox);
+            this.Controls.Add(this._phoneInitialTextBox);
             this.Controls.Add(this._opportunityChangeButton);
             this.Controls.Add(this._emailTextBox);
             this.Controls.Add(this.label4);
@@ -377,7 +404,6 @@
             this.Controls.Add(this._okButton);
             this.Controls.Add(this._cancelButton);
             this.Controls.Add(this._birthDatePicker);
-            this.Controls.Add(this._phoneTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this._idTextBox);
@@ -413,7 +439,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox _idTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox _phoneTextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker _birthDatePicker;
@@ -426,5 +451,8 @@
         private System.Windows.Forms.TextBox _emailTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button _opportunityChangeButton;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox _phoneContentTextBox;
+        private System.Windows.Forms.TextBox _phoneInitialTextBox;
     }
 }

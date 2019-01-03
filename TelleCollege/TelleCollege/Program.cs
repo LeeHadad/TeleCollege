@@ -27,6 +27,12 @@ namespace TelleCollege
         public static int coursesAmount = 6;
         public static int[] coursePrices = { 1600, 1200, 1350, 1100, 1500, 1500 };
     }
+
+    public static class Discounts
+    {
+        public static int discountAmount = 6;
+        public static string[] discountPrices = { "100","500", "1200", "25%", "10%", "50%"};
+    }
     public static class Statuses
     {
         public enum status
@@ -111,6 +117,8 @@ namespace TelleCollege
 
         [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.I1, SizeConst = 6)]
         public bool[] courses;
+        [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.I1, SizeConst = 6)]
+        public bool[] discounts;
 
         public Date callLaterDate;
 
@@ -125,9 +133,14 @@ namespace TelleCollege
         public int editCallLater = (int)Actions.action.no_change;
         public int HistoryIndex = -1;
     }
+    public struct encapsulateString
+    {
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 21)]
+        public string userName;
+    }
     public static class cppLinkage
     {
-        private const string dllDir = "F:\\SCE\\Year #2\\Software Engineering Basics\\GIT\\externalLibrary\\Debug";
+        private const string dllDir = "";
         public static void MarshalUnmananagedArray2StructList<T>(IntPtr unmanagedArray, int length, out List<T> mangagedList)
         {
             var size = Marshal.SizeOf(typeof(T));
@@ -141,7 +154,7 @@ namespace TelleCollege
         }
         [DllImport(dllDir + "\\externalLibrary.dll", CallingConvention = CallingConvention.StdCall)]
         [return: MarshalAs(UnmanagedType.I1)]
-        public static extern bool tryLogin([MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]string id);
+        public static extern bool tryLogin([MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]string id,ref encapsulateString res);
 
         [DllImport(dllDir + "\\externalLibrary.dll", CallingConvention = CallingConvention.StdCall)]
         public static extern int checkValidID([MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]string id);

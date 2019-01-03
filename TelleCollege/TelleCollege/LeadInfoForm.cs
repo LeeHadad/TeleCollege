@@ -36,7 +36,8 @@ namespace TelleCollege
                 }
                 else
                     this._birthDatePicker.Value = DateTime.Today;
-                this._phoneTextBox.Text = clone.customer.phone;
+                this._phoneInitialTextBox.Text = clone.customer.phone.Split('-')[0];
+                this._phoneContentTextBox.Text = clone.customer.phone.Split('-')[1];
                 this._emailTextBox.Text = clone.customer.email;
                 if (clone.customer.callLaterDate.day != -1 && clone.customer.callLaterDate.day != 0)
                 {
@@ -96,7 +97,7 @@ namespace TelleCollege
                 {
                     _clone.customer.birthdate.day = -1;
                 }
-                _clone.customer.phone = this._phoneTextBox.Text;
+                _clone.customer.phone = this._phoneInitialTextBox.Text + "-" + this._phoneContentTextBox.Text;
                 _clone.customer.email = this._emailTextBox.Text;
                 if (this._callLaterCheckBox.Checked)
                 {
@@ -121,6 +122,8 @@ namespace TelleCollege
                 }
                 else
                 {
+                    if(_clone.customer.callLaterDate.day != -1)
+                        _clone.editCallLater = (int)Actions.action.deleted;
                     _clone.customer.callLaterDate.day = -1;
                 }
 
@@ -147,7 +150,10 @@ namespace TelleCollege
                     if (res[2] == 0)
                         _idTextBox.ForeColor = System.Drawing.Color.Gold;
                     if (res[3] == 0)
-                        _phoneTextBox.ForeColor = System.Drawing.Color.Gold;
+                    {
+                        _phoneInitialTextBox.ForeColor = System.Drawing.Color.Gold;
+                        _phoneContentTextBox.ForeColor = System.Drawing.Color.Gold;
+                    }
                     if (res[4] == 0)
                         _emailTextBox.ForeColor = System.Drawing.Color.Gold;
 
@@ -170,7 +176,7 @@ namespace TelleCollege
             {
                 (this.Owner as OriginForm)._OpportunityButton_Click(null, null);
                 this.Visible = false;
-                (new OpportunityInfoForm(_clone, _addOrUpdate)).ShowDialog(this);
+                (new OpportunityInfoForm(_clone, 1)).ShowDialog(this);
                 if (_clone.isChanged)
                     this.Close();
                 else
